@@ -2,20 +2,21 @@ import "./globals.css";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Andrew Hayter | Fullstack Engineer",
+  title: "Andrew Hayter | Fullstack Engineer & Security Specialist",
   description:
-    "Andrew Hayter – Independent Fullstack Developer specializing in secure, scalable web applications. 9+ years in JavaScript/TypeScript ecosystems, cybersecurity and blockchain development.",
+    "Independent Fullstack Developer & Security Specialist. 9+ years building secure, scalable web applications. React, Next.js, TypeScript, cybersecurity, blockchain development.",
   keywords: [
     "Andrew Hayter",
     "fullstack developer",
+    "security specialist",
     "cybersecurity",
     "React",
     "Next.js",
     "TypeScript",
     "blockchain",
-    "security specialist",
     "web development",
     "consultant",
+    "penetration testing",
   ],
   authors: [{ name: "Andrew Hayter" }],
   creator: "Andrew Hayter",
@@ -30,9 +31,9 @@ export const metadata: Metadata = {
     canonical: "/",
   },
   openGraph: {
-    title: "Andrew Hayter | Fullstack Engineer",
+    title: "Andrew Hayter | Fullstack Engineer & Security Specialist",
     description:
-      "Independent Fullstack Developer specializing in secure, scalable web applications. Building stuff and breaking stuff since 2015.",
+      "Independent Fullstack Developer & Security Specialist. Building secure, scalable web applications with React, Next.js, TypeScript. AI audits, pentest rigs, cybersecurity integration.",
     url: "https://andrewhayter.com",
     siteName: "Andrew Hayter",
     images: [
@@ -40,7 +41,7 @@ export const metadata: Metadata = {
         url: "/opengraph-image",
         width: 1200,
         height: 630,
-        alt: "Andrew Hayter - Fullstack Engineer",
+        alt: "Andrew Hayter - Fullstack Engineer & Security Specialist",
       },
     ],
     locale: "en_US",
@@ -48,9 +49,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Andrew Hayter | Fullstack Engineer",
+    title: "Andrew Hayter | Fullstack Engineer & Security Specialist",
     description:
-      "Independent Fullstack Developer specializing in secure, scalable web applications. Building stuff and breaking stuff since 2015.",
+      "Independent Fullstack Developer & Security Specialist. Building secure, scalable web applications with React, Next.js, TypeScript. AI audits, pentest rigs, cybersecurity integration.",
     images: ["/twitter-image"],
     creator: "@andrewhayter",
   },
@@ -79,9 +80,9 @@ export default function RootLayout({
     "@context": "https://schema.org",
     "@type": "Person",
     name: "Andrew Hayter",
-    jobTitle: "Fullstack Engineer",
+    jobTitle: "Fullstack Engineer & Security Specialist",
     description:
-      "Independent Fullstack Developer specializing in secure, scalable web applications. 9+ years in JavaScript/TypeScript ecosystems, cybersecurity and blockchain development.",
+      "Independent Fullstack Developer & Security Specialist specializing in secure, scalable web applications. 9+ years in JavaScript/TypeScript ecosystems, cybersecurity and blockchain development.",
     url: "https://andrewhayter.com",
     email: "andrewhayter@gmail.com",
     sameAs: [
@@ -94,20 +95,12 @@ export default function RootLayout({
       "TypeScript",
       "Node.js",
       "Cybersecurity",
+      "Penetration Testing",
       "Blockchain Development",
       "Web Development",
       "Fullstack Development",
+      "AI Security Audits",
     ],
-    hasOccupation: {
-      "@type": "Occupation",
-      name: "Fullstack Engineer",
-      description:
-        "Building secure, scalable web applications with modern technologies",
-    },
-    alumniOf: {
-      "@type": "Organization",
-      name: "Google Cybersecurity Certificate",
-    },
     worksFor: {
       "@type": "Organization",
       name: "Independent Consulting",
