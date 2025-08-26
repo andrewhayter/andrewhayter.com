@@ -14,16 +14,9 @@ export default function Home() {
     "#5f27cd", // purple
   ];
 
-  // Pixel trail colors that match the lava lamp gradient exactly
+  // Pixel trail colors - white for subtle sparkle effect
   const pixelColors = [
-    "#ff6b6b", // coral red
-    "#4ecdc4", // turquoise
-    "#45b7d1", // sky blue
-    "#96ceb4", // mint green
-    "#feca57", // golden yellow
-    "#ff9ff3", // pink
-    "#54a0ff", // electric blue
-    "#5f27cd", // purple
+    "#ffffff", // white
   ];
 
   return (
@@ -36,13 +29,13 @@ export default function Home() {
         <AnimatedGradient colors={gradientColors} speed={40} blur="heavy" />
       </div>
 
-      {/* Pixel trail with gradient-matching colors */}
+      {/* Pixel trail with white sparkles */}
       <PixelTrail
         pixelSize={12}
         fadeDuration={1500}
         delay={60}
         className="fixed inset-0 z-20"
-        pixelClassName="opacity-40"
+        pixelClassName="opacity-30"
         colors={pixelColors}
       />
 
