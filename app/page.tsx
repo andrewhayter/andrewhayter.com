@@ -2,7 +2,7 @@ import AnimatedGradient from "@/components/fancy/background/animated-gradient-wi
 import PixelTrail from "@/components/fancy/background/pixel-trail";
 
 export default function Home() {
-  // Lava lamp gradient colors - darker navy and teal theme with visible movement
+  // Lava lamp gradient colors - muted navy and teal theme
   const gradientColors = [
     "#0a0a1a", // very dark navy
     "#1a1a2e", // dark navy
