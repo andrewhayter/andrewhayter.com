@@ -21,9 +21,7 @@ export default function Home() {
               FULLSTACK ENGINEER
             </h2>
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 sm:gap-8">
-              <div>
-                <div className="w-20 h-20 sm:w-24 sm:h-24 bg-twilight mb-4"></div>
-              </div>
+              <div></div>
               <div className="space-y-3 sm:space-y-4">
                 <p className="text-base sm:text-lg">
                   <strong className="font-black">EMAIL:</strong>{" "}
@@ -205,10 +203,10 @@ export default function Home() {
             </div>
             <div className="lg:col-span-2 space-y-6 sm:space-y-8">
               <div className="text-base sm:text-lg">
-                               <div className="flex flex-col sm:flex-row sm:justify-between sm:items-start mb-2">
-                 <strong className="font-black">VOGELISMS</strong>
-                 <span className="font-mono text-sm sm:text-base">2025</span>
-               </div>
+                <div className="flex flex-col sm:flex-row sm:justify-between sm:items-start mb-2">
+                  <strong className="font-black">VOGELISMS</strong>
+                  <span className="font-mono text-sm sm:text-base">2025</span>
+                </div>
                 <p className="text-sm sm:text-base text-twilight/80 mb-2">
                   React, Vite, TailwindCSS, JavaScript
                 </p>
@@ -233,6 +231,35 @@ export default function Home() {
                   >
                     github.com/andrewhayter/vogelisms.com
                   </a>
+                </div>
+              </div>
+
+              <div className="text-base sm:text-lg">
+                <div className="flex flex-col sm:flex-row sm:justify-between sm:items-start mb-2">
+                  <strong className="font-black">████████████████████</strong>
+                  <span className="font-mono text-sm sm:text-base">2025</span>
+                </div>
+                <p className="text-sm sm:text-base text-twilight/80 mb-2">
+                  Next.js 15, PayloadCMS, PostgreSQL, TailwindCSS, n8n,
+                  Playwright
+                </p>
+                <p className="text-sm sm:text-base leading-relaxed">
+                  Advanced news intelligence platform with comprehensive content
+                  discovery and analysis capabilities. Features automated
+                  content monitoring across multiple sources, intelligent trend
+                  analysis, and content gap identification. Built with modern
+                  headless CMS architecture and sophisticated backend automation
+                  using n8n workflows and Playwright for dynamic content
+                  extraction. Provides real-time insights into emerging topics
+                  and content opportunities across the entire ecosystem.
+                </p>
+                <div className="flex flex-wrap gap-4 mt-3">
+                  <span className="text-sm font-mono text-twilight/60">
+                    ████████████████████
+                  </span>
+                  <span className="text-sm font-mono text-twilight/60">
+                    ████████████████████
+                  </span>
                 </div>
               </div>
             </div>
