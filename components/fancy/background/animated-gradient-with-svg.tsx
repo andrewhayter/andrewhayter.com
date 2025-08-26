@@ -13,7 +13,7 @@ interface AnimatedGradientProps {
 
 const AnimatedGradient: React.FC<AnimatedGradientProps> = ({
   colors,
-  speed = 15,
+  speed = 25,
   blur = "medium",
 }) => {
   const containerRef = useRef<HTMLDivElement>(null);
@@ -50,23 +50,24 @@ const AnimatedGradient: React.FC<AnimatedGradientProps> = ({
           const animationProps = {
             animation: `background-gradient ${speed}s infinite cubic-bezier(0.4, 0, 0.2, 1)`,
             animationDuration: `${speed}s`,
-            animationDelay: `${index * 0.3}s`,
+            animationDelay: `${index * 0.5}s`,
             top: `${getStableRandom(index, seed) * 60}%`,
             left: `${getStableRandom(index + 1, seed) * 60}%`,
-            "--tx-1": (getStableRandom(index + 2, seed) - 0.5) * 0.6,
-            "--ty-1": (getStableRandom(index + 3, seed) - 0.5) * 0.6,
-            "--tx-2": (getStableRandom(index + 4, seed) - 0.5) * 0.6,
-            "--ty-2": (getStableRandom(index + 5, seed) - 0.5) * 0.6,
-            "--tx-3": (getStableRandom(index + 6, seed) - 0.5) * 0.6,
-            "--ty-3": (getStableRandom(index + 7, seed) - 0.5) * 0.6,
-            "--tx-4": (getStableRandom(index + 8, seed) - 0.5) * 0.6,
-            "--ty-4": (getStableRandom(index + 9, seed) - 0.5) * 0.6,
+            "--tx-1": (getStableRandom(index + 2, seed) - 0.5) * 0.4,
+            "--ty-1": (getStableRandom(index + 3, seed) - 0.5) * 0.4,
+            "--tx-2": (getStableRandom(index + 4, seed) - 0.5) * 0.4,
+            "--ty-2": (getStableRandom(index + 5, seed) - 0.5) * 0.4,
+            "--tx-3": (getStableRandom(index + 6, seed) - 0.5) * 0.4,
+            "--ty-3": (getStableRandom(index + 7, seed) - 0.5) * 0.4,
+            "--tx-4": (getStableRandom(index + 8, seed) - 0.5) * 0.4,
+            "--ty-4": (getStableRandom(index + 9, seed) - 0.5) * 0.4,
           } as React.CSSProperties;
 
           return (
             <svg
               key={index}
-              className={cn("absolute", "animate-background-gradient")}
+              className={cn("absolute animate-background-gradient")}
+              style={animationProps}
               width={
                 circleSize * (0.8 + getStableRandom(index + 10, seed) * 1.4)
               }
@@ -74,7 +75,6 @@ const AnimatedGradient: React.FC<AnimatedGradientProps> = ({
                 circleSize * (0.8 + getStableRandom(index + 11, seed) * 1.4)
               }
               viewBox="0 0 100 100"
-              style={animationProps}
             >
               <circle cx="50" cy="50" r="50" fill={color} />
             </svg>
