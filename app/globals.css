@@ -95,40 +95,67 @@
 
 @layer utilities {
   .animate-background-gradient {
-    animation: background-gradient var(--animation-duration, 25s) infinite
-      cubic-bezier(0.4, 0, 0.2, 1);
+    animation: background-gradient var(--animation-duration, 40s) infinite
+      cubic-bezier(0.4, 0, 0.6, 1);
   }
 
   @keyframes background-gradient {
     0% {
-      transform: translate(0, 0);
+      transform: translate(0, 0) scale(1) rotate(0deg);
+      opacity: 0.7;
     }
-    20% {
+    12.5% {
       transform: translate(
         calc(100% * var(--tx-1, 0.3)),
         calc(100% * var(--ty-1, 0.3))
-      );
+      ) scale(1.15) rotate(45deg);
+      opacity: 0.9;
     }
-    40% {
+    25% {
       transform: translate(
         calc(100% * var(--tx-2, -0.3)),
         calc(100% * var(--ty-2, 0.3))
-      );
+      ) scale(0.85) rotate(90deg);
+      opacity: 0.6;
     }
-    60% {
+    37.5% {
       transform: translate(
         calc(100% * var(--tx-3, 0.3)),
         calc(100% * var(--ty-3, -0.3))
-      );
+      ) scale(1.25) rotate(135deg);
+      opacity: 0.8;
     }
-    80% {
+    50% {
       transform: translate(
         calc(100% * var(--tx-4, -0.3)),
         calc(100% * var(--ty-4, -0.3))
-      );
+      ) scale(0.75) rotate(180deg);
+      opacity: 0.5;
+    }
+    62.5% {
+      transform: translate(
+        calc(100% * var(--tx-1, 0.3) * 0.6),
+        calc(100% * var(--ty-1, 0.3) * 0.6)
+      ) scale(1.1) rotate(225deg);
+      opacity: 0.7;
+    }
+    75% {
+      transform: translate(
+        calc(100% * var(--tx-2, -0.3) * 0.4),
+        calc(100% * var(--ty-2, 0.3) * 0.4)
+      ) scale(0.9) rotate(270deg);
+      opacity: 0.6;
+    }
+    87.5% {
+      transform: translate(
+        calc(100% * var(--tx-3, 0.3) * 0.2),
+        calc(100% * var(--ty-3, -0.3) * 0.2)
+      ) scale(1.05) rotate(315deg);
+      opacity: 0.8;
     }
     100% {
-      transform: translate(0, 0);
+      transform: translate(0, 0) scale(1) rotate(360deg);
+      opacity: 0.7;
     }
   }
 }
