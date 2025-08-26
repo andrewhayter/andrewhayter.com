@@ -3,9 +3,6 @@
 @tailwind utilities;
 
 @layer base {
-  html {
-    scroll-behavior: smooth;
-  }
   body {
     @apply bg-acid text-twilight font-mono;
   }
@@ -73,15 +70,6 @@
     animation: none !important;
     transition: none !important;
   }
-}
-
-/* Custom scrollbar */
-::-webkit-scrollbar {
-  width: 8px;
-}
-::-webkit-scrollbar-thumb {
-  background: theme("colors.acid");
-  border-radius: 9999px;
 }
 
 @layer base {
