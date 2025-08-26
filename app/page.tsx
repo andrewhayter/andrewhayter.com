@@ -12,16 +12,15 @@ export default function Home() {
       />
       <div className="relative z-10 pointer-events-auto">
         <div className="max-w-6xl mx-auto">
-          {/* Header */}
-          <div className="mb-12 sm:mb-16">
-            <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-black mb-2 sm:mb-4">
-              ANDREW HAYTER
-            </h1>
-            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-black mb-6 sm:mb-8 text-twilight/80">
-              FULLSTACK ENGINEER
-            </h2>
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 sm:gap-8">
-              <div></div>
+          {/* Hero Section */}
+          <div className="min-h-screen flex flex-col justify-center mb-12 sm:mb-16">
+            <div>
+              <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-black mb-2 sm:mb-4">
+                ANDREW HAYTER
+              </h1>
+              <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-black mb-6 sm:mb-8 text-twilight/80">
+                FULLSTACK ENGINEER
+              </h2>
               <div className="space-y-3 sm:space-y-4">
                 <p className="text-base sm:text-lg">
                   <strong className="font-black">EMAIL:</strong>{" "}
@@ -45,16 +44,12 @@ export default function Home() {
                 <p className="text-base sm:text-lg">
                   <strong className="font-black">LINKEDIN:</strong>{" "}
                   <a
-                    href="https://linkedin.com/in/hello-andrewhayter"
+                    href="https://www.linkedin.com/in/hello-andrew-hayter/"
                     target="_blank"
                     className="text-twilight hover:underline"
                   >
-                    linkedin.com/in/andrewhayter
+                    linkedin.com/in/hello-andrew-hayter
                   </a>
-                </p>
-                <p className="text-base sm:text-lg">
-                  <strong className="font-black">LOCATION:</strong>{" "}
-                  <span className="font-mono">Vancouver, BC</span>
                 </p>
               </div>
             </div>
@@ -69,61 +64,12 @@ export default function Home() {
             </div>
             <div className="lg:col-span-2 space-y-4 sm:space-y-6">
               <p className="text-base sm:text-lg leading-relaxed">
-                Relentlessly curious Fullstack Developer with 9+ years of
-                end-to-end product ownership in modern JavaScript/TypeScript
-                systems. Adept at translating business and security requirements
-                into scalable web architectures. Passionate about emerging tech,
-                automation, and behavioral optimization to solve complex
-                challenges.
+                I build stuff and break stuff. Independent Fullstack Developer
+                specializing in secure, scalable web applications. 9+ years in
+                JavaScript/TypeScript ecosystems, recently expanded further into
+                cybersecurity and blockchain development. Love building apps,
+                bringing ideas to life, and making data-driven decisions.
               </p>
-              <p className="text-base sm:text-lg leading-relaxed">
-                Integrate DevSecOps, smart cloud orchestration, and creative
-                automation. Recent pivot into cybersecurity, blending
-                engineering with risk management. "Learn, build, document,
-                teach" mentality. Known for transforming deep research into
-                impactful solutions.
-              </p>
-            </div>
-          </div>
-
-          {/* Skills */}
-          <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 sm:gap-8 mb-12 sm:mb-16">
-            <div>
-              <h2 className="text-lg sm:text-xl lg:text-2xl font-black border-b-4 border-twilight pb-3">
-                SKILLS
-              </h2>
-            </div>
-            <div className="lg:col-span-2 space-y-4 sm:space-y-6">
-              <div className="text-base sm:text-lg">
-                <strong className="font-black">ARCHITECTURAL MASTERY:</strong>{" "}
-                React, NextJS (v15), Node, Typescript, TailwindCSS, PayloadCMS
-              </div>
-              <div className="text-base sm:text-lg">
-                <strong className="font-black">BACKEND CRAFT:</strong> Express,
-                REST APIs, Rust, Linux, scalable MySQL/Postgres/MongoDB
-              </div>
-              <div className="text-base sm:text-lg">
-                <strong className="font-black">CLOUD/DEVOPS:</strong> AWS, GCP,
-                OpenShift, Docker, CI/CD, IaC, technical SEO, real-world
-                performance tuning
-              </div>
-              <div className="text-base sm:text-lg">
-                <strong className="font-black">
-                  SECURITY-FIRST ENGINEERING:
-                </strong>{" "}
-                Wireless pentesting, SIEM, authentication, incident response,
-                ethical hacking
-              </div>
-              <div className="text-base sm:text-lg">
-                <strong className="font-black">PRODUCT/PROCESS:</strong> Agile
-                leadership, PRD creation, automated test pipelines,
-                cross-functional collaboration
-              </div>
-              <div className="text-base sm:text-lg">
-                <strong className="font-black">GROWTH MINDSET:</strong>{" "}
-                Systematic self-upskilling, deep research habits, project-driven
-                learning, rapid prototyping
-              </div>
             </div>
           </div>
 
@@ -204,6 +150,35 @@ export default function Home() {
             <div className="lg:col-span-2 space-y-6 sm:space-y-8">
               <div className="text-base sm:text-lg">
                 <div className="flex flex-col sm:flex-row sm:justify-between sm:items-start mb-2">
+                  <strong className="font-black">████████████████████</strong>
+                  <span className="font-mono text-sm sm:text-base">2025</span>
+                </div>
+                <p className="text-sm sm:text-base text-twilight/80 mb-2">
+                  Next.js 15, PayloadCMS, PostgreSQL, TailwindCSS, n8n,
+                  Playwright
+                </p>
+                <p className="text-sm sm:text-base leading-relaxed">
+                  Advanced news intelligence platform with comprehensive content
+                  discovery and analysis capabilities. Features automated
+                  content monitoring across multiple sources, intelligent trend
+                  analysis, and content gap identification. Built with modern
+                  headless CMS architecture and sophisticated backend automation
+                  using n8n workflows and Playwright for dynamic content
+                  extraction. Provides real-time insights into emerging topics
+                  and content opportunities across the entire ecosystem.
+                </p>
+                <div className="flex flex-wrap gap-4 mt-3">
+                  <span className="text-sm font-mono text-twilight/60">
+                    ████████████████████
+                  </span>
+                  <span className="text-sm font-mono text-twilight/60">
+                    ████████████████████
+                  </span>
+                </div>
+              </div>
+
+              <div className="text-base sm:text-lg">
+                <div className="flex flex-col sm:flex-row sm:justify-between sm:items-start mb-2">
                   <strong className="font-black">VOGELISMS</strong>
                   <span className="font-mono text-sm sm:text-base">2025</span>
                 </div>
@@ -233,34 +208,46 @@ export default function Home() {
                   </a>
                 </div>
               </div>
+            </div>
+          </div>
 
+          {/* Skills */}
+          <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 sm:gap-8 mb-12 sm:mb-16">
+            <div>
+              <h2 className="text-lg sm:text-xl lg:text-2xl font-black border-b-4 border-twilight pb-3">
+                SKILLS
+              </h2>
+            </div>
+            <div className="lg:col-span-2 space-y-4 sm:space-y-6">
               <div className="text-base sm:text-lg">
-                <div className="flex flex-col sm:flex-row sm:justify-between sm:items-start mb-2">
-                  <strong className="font-black">████████████████████</strong>
-                  <span className="font-mono text-sm sm:text-base">2025</span>
-                </div>
-                <p className="text-sm sm:text-base text-twilight/80 mb-2">
-                  Next.js 15, PayloadCMS, PostgreSQL, TailwindCSS, n8n,
-                  Playwright
-                </p>
-                <p className="text-sm sm:text-base leading-relaxed">
-                  Advanced news intelligence platform with comprehensive content
-                  discovery and analysis capabilities. Features automated
-                  content monitoring across multiple sources, intelligent trend
-                  analysis, and content gap identification. Built with modern
-                  headless CMS architecture and sophisticated backend automation
-                  using n8n workflows and Playwright for dynamic content
-                  extraction. Provides real-time insights into emerging topics
-                  and content opportunities across the entire ecosystem.
-                </p>
-                <div className="flex flex-wrap gap-4 mt-3">
-                  <span className="text-sm font-mono text-twilight/60">
-                    ████████████████████
-                  </span>
-                  <span className="text-sm font-mono text-twilight/60">
-                    ████████████████████
-                  </span>
-                </div>
+                <strong className="font-black">ARCHITECTURAL MASTERY:</strong>{" "}
+                React, NextJS (v15), Node, Typescript, TailwindCSS, PayloadCMS
+              </div>
+              <div className="text-base sm:text-lg">
+                <strong className="font-black">BACKEND CRAFT:</strong> Express,
+                REST APIs, Rust, Linux, scalable MySQL/Postgres/MongoDB
+              </div>
+              <div className="text-base sm:text-lg">
+                <strong className="font-black">CLOUD/DEVOPS:</strong> AWS, GCP,
+                OpenShift, Docker, CI/CD, IaC, technical SEO, real-world
+                performance tuning
+              </div>
+              <div className="text-base sm:text-lg">
+                <strong className="font-black">
+                  SECURITY-FIRST ENGINEERING:
+                </strong>{" "}
+                Wireless pentesting, SIEM, authentication, incident response,
+                ethical hacking
+              </div>
+              <div className="text-base sm:text-lg">
+                <strong className="font-black">PRODUCT/PROCESS:</strong> Agile
+                leadership, PRD creation, automated test pipelines,
+                cross-functional collaboration
+              </div>
+              <div className="text-base sm:text-lg">
+                <strong className="font-black">GROWTH MINDSET:</strong>{" "}
+                Systematic self-upskilling, deep research habits, project-driven
+                learning, rapid prototyping
               </div>
             </div>
           </div>
@@ -277,7 +264,7 @@ export default function Home() {
                 <strong className="font-black">
                   GOOGLE CYBERSECURITY CERTIFICATE:
                 </strong>
-                <div className="ml-4 mt-2">
+                <div className="mt-2">
                   <div className="font-mono">COMPLETED OCTOBER 2024</div>
                   <div className="font-mono">Google</div>
                 </div>
@@ -286,7 +273,7 @@ export default function Home() {
                 <strong className="font-black">
                   COMPTIA SECURITY+ (IN PROGRESS):
                 </strong>
-                <div className="ml-4 mt-2">
+                <div className="mt-2">
                   <div className="font-mono">
                     SEPT 2025 (EXPECTED COMPLETION)
                   </div>
