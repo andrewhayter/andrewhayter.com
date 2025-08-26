@@ -1,28 +1,56 @@
+import AnimatedGradient from "@/components/fancy/background/animated-gradient-with-svg";
 import PixelTrail from "@/components/fancy/background/pixel-trail";
 
 export default function Home() {
+  // Plaster-like gradient colors - warm, earthy tones that create a subtle, flowing effect
+  const gradientColors = [
+    "#f5f5dc", // beige
+    "#d2b48c", // tan
+    "#cd853f", // peru
+    "#daa520", // goldenrod
+    "#f4a460", // sandy brown
+    "#deb887", // burlywood
+  ];
+
+  // Pixel trail colors that match the gradient - using the lighter colors
+  const pixelColors = [
+    "#f5f5dc", // beige
+    "#d2b48c", // tan
+    "#deb887", // burlywood
+  ];
+
   return (
-    <div className="min-h-screen bg-acid text-twilight p-6 sm:p-8 lg:p-12 relative">
+    <div className="min-h-screen bg-acid text-twilight p-6 sm:p-8 lg:p-12 relative overflow-hidden">
+      {/* Animated gradient background */}
+      <div className="absolute inset-0 z-0">
+        <AnimatedGradient colors={gradientColors} speed={20} blur="medium" />
+      </div>
+
+      {/* Pixel trail with gradient-matching colors */}
       <PixelTrail
-        pixelSize={20}
-        fadeDuration={800}
-        delay={100}
+        pixelSize={16}
+        fadeDuration={1200}
+        delay={80}
         className="absolute inset-0"
-        pixelClassName="bg-black"
+        pixelClassName="opacity-60"
+        colors={pixelColors}
       />
-      <div className="relative z-10 pointer-events-auto">
+
+      {/* Subtle overlay to ensure text readability */}
+      <div className="absolute inset-0 bg-acid/20 z-10" />
+      <div className="relative z-20 pointer-events-auto">
         <div className="max-w-6xl mx-auto">
           {/* Hero Section */}
           <div className="min-h-screen flex flex-col justify-center mb-12 sm:mb-16">
             <div>
-              <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-black mb-2 sm:mb-4">
+              <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-black mb-2 sm:mb-4 text-twilight drop-shadow-[0_2px_4px_rgba(255,255,255,0.8)]">
                 ANDREW HAYTER
               </h1>
-              <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-black mb-6 sm:mb-8 text-twilight/80">
+              <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-black mb-6 sm:mb-8 text-twilight/90 drop-shadow-[0_1px_3px_rgba(255,255,255,0.6)]">
                 FULLSTACK ENGINEER
               </h2>
               <div className="space-y-3 sm:space-y-4">
-                <p className="text-base sm:text-lg">
+                <p className="text-base sm:text-lg drop-shadow-[0_1px_2px_rgba(255,255,255,0.7)]">
                   <strong className="font-black">EMAIL:</strong>{" "}
                   <a
                     href="mailto:andrewhayter@gmail.com"
@@ -31,7 +59,7 @@ export default function Home() {
                     andrewhayter@gmail.com
                   </a>
                 </p>
-                <p className="text-base sm:text-lg">
+                <p className="text-base sm:text-lg drop-shadow-[0_1px_2px_rgba(255,255,255,0.7)]">
                   <strong className="font-black">GITHUB:</strong>{" "}
                   <a
                     href="https://github.com/andrewhayter"
@@ -41,7 +69,7 @@ export default function Home() {
                     github.com/andrewhayter
                   </a>
                 </p>
-                <p className="text-base sm:text-lg">
+                <p className="text-base sm:text-lg drop-shadow-[0_1px_2px_rgba(255,255,255,0.7)]">
                   <strong className="font-black">LINKEDIN:</strong>{" "}
                   <a
                     href="https://www.linkedin.com/in/hello-andrew-hayter/"
@@ -58,12 +86,12 @@ export default function Home() {
           {/* Professional Summary */}
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 sm:gap-8 mb-12 sm:mb-16">
             <div>
-              <h2 className="text-lg sm:text-xl lg:text-2xl font-black border-b-4 border-twilight pb-3">
+              <h2 className="text-lg sm:text-xl lg:text-2xl font-black border-b-4 border-twilight pb-3 drop-shadow-[0_1px_2px_rgba(255,255,255,0.8)]">
                 PROFESSIONAL SUMMARY
               </h2>
             </div>
             <div className="lg:col-span-2 space-y-4 sm:space-y-6">
-              <p className="text-base sm:text-lg leading-relaxed">
+              <p className="text-base sm:text-lg leading-relaxed drop-shadow-[0_1px_2px_rgba(255,255,255,0.6)]">
                 I build stuff and break stuff. Independent Fullstack Developer
                 specializing in secure, scalable web applications. 9+ years in
                 JavaScript/TypeScript ecosystems, recently expanded further into
@@ -76,24 +104,24 @@ export default function Home() {
           {/* Work Experience */}
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 sm:gap-8 mb-12 sm:mb-16">
             <div>
-              <h2 className="text-lg sm:text-xl lg:text-2xl font-black border-b-4 border-twilight pb-3">
+              <h2 className="text-lg sm:text-xl lg:text-2xl font-black border-b-4 border-twilight pb-3 drop-shadow-[0_1px_2px_rgba(255,255,255,0.8)]">
                 WORK EXPERIENCE
               </h2>
             </div>
             <div className="lg:col-span-2 space-y-6 sm:space-y-8">
               <div className="text-base sm:text-lg">
-                <div className="flex flex-col sm:flex-row sm:justify-between sm:items-start mb-2">
+                <div className="flex flex-col sm:flex-row sm:justify-between sm:items-start mb-2 drop-shadow-[0_1px_2px_rgba(255,255,255,0.7)]">
                   <strong className="font-black">
-                    CONSULTANT / SECURITY SPECIALIST
+                    CONSULTANT / SECURITY SPECIALIST (doin what i do best)
                   </strong>
                   <span className="font-mono text-sm sm:text-base">
                     2021 – PRESENT
                   </span>
                 </div>
-                <p className="text-sm sm:text-base text-twilight/80 mb-2">
+                <p className="text-sm sm:text-base text-twilight/80 mb-2 drop-shadow-[0_1px_2px_rgba(255,255,255,0.6)]">
                   Independent Consulting
                 </p>
-                <p className="text-sm sm:text-base leading-relaxed">
+                <p className="text-sm sm:text-base leading-relaxed drop-shadow-[0_1px_2px_rgba(255,255,255,0.6)]">
                   AI audits, pentest rigs, Next.js 15 wizardry. Specializing in
                   security-first development and modern web architecture.
                   Building scalable solutions with a focus on cybersecurity
@@ -102,18 +130,18 @@ export default function Home() {
               </div>
 
               <div className="text-base sm:text-lg">
-                <div className="flex flex-col sm:flex-row sm:justify-between sm:items-start mb-2">
+                <div className="flex flex-col sm:flex-row sm:justify-between sm:items-start mb-2 drop-shadow-[0_1px_2px_rgba(255,255,255,0.7)]">
                   <strong className="font-black">
-                    PLATFORM DEVELOPER – IOT STARTUP
+                    PLATFORM DEVELOPER – IOT STARTUP (v huge v fun)
                   </strong>
                   <span className="font-mono text-sm sm:text-base">
                     2018 – 2021
                   </span>
                 </div>
-                <p className="text-sm sm:text-base text-twilight/80 mb-2">
+                <p className="text-sm sm:text-base text-twilight/80 mb-2 drop-shadow-[0_1px_2px_rgba(255,255,255,0.6)]">
                   IoT Technology Company
                 </p>
-                <p className="text-sm sm:text-base leading-relaxed">
+                <p className="text-sm sm:text-base leading-relaxed drop-shadow-[0_1px_2px_rgba(255,255,255,0.6)]">
                   Cloud-native event streams on GCP. Built scalable backend
                   systems and real-time data processing pipelines for IoT
                   devices. Implemented CI/CD and infrastructure as code.
@@ -121,16 +149,18 @@ export default function Home() {
               </div>
 
               <div className="text-base sm:text-lg">
-                <div className="flex flex-col sm:flex-row sm:justify-between sm:items-start mb-2">
-                  <strong className="font-black">WORDPRESS DEVELOPER</strong>
+                <div className="flex flex-col sm:flex-row sm:justify-between sm:items-start mb-2 drop-shadow-[0_1px_2px_rgba(255,255,255,0.7)]">
+                  <strong className="font-black">
+                    WORDPRESS DEVELOPER (lol i know)
+                  </strong>
                   <span className="font-mono text-sm sm:text-base">
                     2015 – 2019
                   </span>
                 </div>
-                <p className="text-sm sm:text-base text-twilight/80 mb-2">
+                <p className="text-sm sm:text-base text-twilight/80 mb-2 drop-shadow-[0_1px_2px_rgba(255,255,255,0.6)]">
                   Freelance & Agency Work
                 </p>
-                <p className="text-sm sm:text-base leading-relaxed">
+                <p className="text-sm sm:text-base leading-relaxed drop-shadow-[0_1px_2px_rgba(255,255,255,0.6)]">
                   30+ sites, 99.9% uptime, bash-fu. Managed hosting
                   infrastructure, custom theme development, and performance
                   optimization. Built automated deployment and monitoring
@@ -143,21 +173,21 @@ export default function Home() {
           {/* Projects */}
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 sm:gap-8 mb-12 sm:mb-16">
             <div>
-              <h2 className="text-lg sm:text-xl lg:text-2xl font-black border-b-4 border-twilight pb-3">
+              <h2 className="text-lg sm:text-xl lg:text-2xl font-black border-b-4 border-twilight pb-3 drop-shadow-[0_1px_2px_rgba(255,255,255,0.8)]">
                 PROJECTS
               </h2>
             </div>
             <div className="lg:col-span-2 space-y-6 sm:space-y-8">
               <div className="text-base sm:text-lg">
-                <div className="flex flex-col sm:flex-row sm:justify-between sm:items-start mb-2">
+                <div className="flex flex-col sm:flex-row sm:justify-between sm:items-start mb-2 drop-shadow-[0_1px_2px_rgba(255,255,255,0.7)]">
                   <strong className="font-black">████████████████████</strong>
                   <span className="font-mono text-sm sm:text-base">2025</span>
                 </div>
-                <p className="text-sm sm:text-base text-twilight/80 mb-2">
+                <p className="text-sm sm:text-base text-twilight/80 mb-2 drop-shadow-[0_1px_2px_rgba(255,255,255,0.6)]">
                   Next.js 15, PayloadCMS, PostgreSQL, TailwindCSS, n8n,
                   Playwright
                 </p>
-                <p className="text-sm sm:text-base leading-relaxed">
+                <p className="text-sm sm:text-base leading-relaxed drop-shadow-[0_1px_2px_rgba(255,255,255,0.6)]">
                   Advanced news intelligence platform with comprehensive content
                   discovery and analysis capabilities. Features automated
                   content monitoring across multiple sources, intelligent trend
@@ -168,24 +198,24 @@ export default function Home() {
                   and content opportunities across the entire ecosystem.
                 </p>
                 <div className="flex flex-wrap gap-4 mt-3">
-                  <span className="text-sm font-mono text-twilight/60">
+                  <span className="text-sm font-mono text-twilight/60 drop-shadow-[0_1px_2px_rgba(255,255,255,0.5)]">
                     ████████████████████
                   </span>
-                  <span className="text-sm font-mono text-twilight/60">
+                  <span className="text-sm font-mono text-twilight/60 drop-shadow-[0_1px_2px_rgba(255,255,255,0.5)]">
                     ████████████████████
                   </span>
                 </div>
               </div>
 
               <div className="text-base sm:text-lg">
-                <div className="flex flex-col sm:flex-row sm:justify-between sm:items-start mb-2">
+                <div className="flex flex-col sm:flex-row sm:justify-between sm:items-start mb-2 drop-shadow-[0_1px_2px_rgba(255,255,255,0.7)]">
                   <strong className="font-black">VOGELISMS</strong>
                   <span className="font-mono text-sm sm:text-base">2025</span>
                 </div>
-                <p className="text-sm sm:text-base text-twilight/80 mb-2">
+                <p className="text-sm sm:text-base text-twilight/80 mb-2 drop-shadow-[0_1px_2px_rgba(255,255,255,0.6)]">
                   React, Vite, TailwindCSS, JavaScript
                 </p>
-                <p className="text-sm sm:text-base leading-relaxed">
+                <p className="text-sm sm:text-base leading-relaxed drop-shadow-[0_1px_2px_rgba(255,255,255,0.6)]">
                   A random quote generator featuring Scott Vogel's iconic stage
                   banter. Features keyboard shortcuts, permalink system, and
                   mobile-friendly design. Clean, minimalist interface showcasing
@@ -195,14 +225,14 @@ export default function Home() {
                   <a
                     href="http://vogelisms.com/"
                     target="_blank"
-                    className="text-sm font-mono text-twilight hover:underline"
+                    className="text-sm font-mono text-twilight hover:underline drop-shadow-[0_1px_2px_rgba(255,255,255,0.6)]"
                   >
                     vogelisms.com
                   </a>
                   <a
                     href="https://github.com/andrewhayter/vogelisms.com"
                     target="_blank"
-                    className="text-sm font-mono text-twilight hover:underline"
+                    className="text-sm font-mono text-twilight hover:underline drop-shadow-[0_1px_2px_rgba(255,255,255,0.6)]"
                   >
                     github.com/andrewhayter/vogelisms.com
                   </a>
@@ -214,37 +244,37 @@ export default function Home() {
           {/* Skills */}
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 sm:gap-8 mb-12 sm:mb-16">
             <div>
-              <h2 className="text-lg sm:text-xl lg:text-2xl font-black border-b-4 border-twilight pb-3">
+              <h2 className="text-lg sm:text-xl lg:text-2xl font-black border-b-4 border-twilight pb-3 drop-shadow-[0_1px_2px_rgba(255,255,255,0.8)]">
                 SKILLS
               </h2>
             </div>
             <div className="lg:col-span-2 space-y-4 sm:space-y-6">
-              <div className="text-base sm:text-lg">
+              <div className="text-base sm:text-lg drop-shadow-[0_1px_2px_rgba(255,255,255,0.6)]">
                 <strong className="font-black">ARCHITECTURAL MASTERY:</strong>{" "}
                 React, NextJS (v15), Node, Typescript, TailwindCSS, PayloadCMS
               </div>
-              <div className="text-base sm:text-lg">
+              <div className="text-base sm:text-lg drop-shadow-[0_1px_2px_rgba(255,255,255,0.6)]">
                 <strong className="font-black">BACKEND CRAFT:</strong> Express,
                 REST APIs, Rust, Linux, scalable MySQL/Postgres/MongoDB
               </div>
-              <div className="text-base sm:text-lg">
+              <div className="text-base sm:text-lg drop-shadow-[0_1px_2px_rgba(255,255,255,0.6)]">
                 <strong className="font-black">CLOUD/DEVOPS:</strong> AWS, GCP,
                 OpenShift, Docker, CI/CD, IaC, technical SEO, real-world
                 performance tuning
               </div>
-              <div className="text-base sm:text-lg">
+              <div className="text-base sm:text-lg drop-shadow-[0_1px_2px_rgba(255,255,255,0.6)]">
                 <strong className="font-black">
                   SECURITY-FIRST ENGINEERING:
                 </strong>{" "}
                 Wireless pentesting, SIEM, authentication, incident response,
                 ethical hacking
               </div>
-              <div className="text-base sm:text-lg">
+              <div className="text-base sm:text-lg drop-shadow-[0_1px_2px_rgba(255,255,255,0.6)]">
                 <strong className="font-black">PRODUCT/PROCESS:</strong> Agile
                 leadership, PRD creation, automated test pipelines,
                 cross-functional collaboration
               </div>
-              <div className="text-base sm:text-lg">
+              <div className="text-base sm:text-lg drop-shadow-[0_1px_2px_rgba(255,255,255,0.6)]">
                 <strong className="font-black">GROWTH MINDSET:</strong>{" "}
                 Systematic self-upskilling, deep research habits, project-driven
                 learning, rapid prototyping
@@ -255,12 +285,12 @@ export default function Home() {
           {/* Certifications */}
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 sm:gap-8">
             <div>
-              <h2 className="text-lg sm:text-xl lg:text-2xl font-black border-b-4 border-twilight pb-3">
+              <h2 className="text-lg sm:text-xl lg:text-2xl font-black border-b-4 border-twilight pb-3 drop-shadow-[0_1px_2px_rgba(255,255,255,0.8)]">
                 CERTIFICATIONS
               </h2>
             </div>
             <div className="lg:col-span-2 space-y-4 sm:space-y-6">
-              <div className="text-base sm:text-lg">
+              <div className="text-base sm:text-lg drop-shadow-[0_1px_2px_rgba(255,255,255,0.6)]">
                 <strong className="font-black">
                   GOOGLE CYBERSECURITY CERTIFICATE:
                 </strong>
@@ -269,7 +299,7 @@ export default function Home() {
                   <div className="font-mono">Google</div>
                 </div>
               </div>
-              <div className="text-base sm:text-lg">
+              <div className="text-base sm:text-lg drop-shadow-[0_1px_2px_rgba(255,255,255,0.6)]">
                 <strong className="font-black">
                   COMPTIA SECURITY+ (IN PROGRESS):
                 </strong>

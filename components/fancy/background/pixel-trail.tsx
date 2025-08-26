@@ -13,6 +13,7 @@ interface PixelTrailProps {
   delay?: number; // ms
   className?: string;
   pixelClassName?: string;
+  colors?: string[]; // Array of colors to randomly choose from
 }
 
 const PixelTrail: React.FC<PixelTrailProps> = ({
@@ -21,6 +22,7 @@ const PixelTrail: React.FC<PixelTrailProps> = ({
   delay = 0,
   className,
   pixelClassName,
+  colors = ["#000000"],
 }) => {
   const containerRef = useRef<HTMLDivElement>(null);
   const dimensions = useDimensions(containerRef);
@@ -78,6 +80,7 @@ const PixelTrail: React.FC<PixelTrailProps> = ({
               fadeDuration={fadeDuration}
               delay={delay}
               className={pixelClassName}
+              colors={colors}
             />
           ))}
         </div>
@@ -94,10 +97,11 @@ interface PixelDotProps {
   fadeDuration: number;
   delay: number;
   className?: string;
+  colors: string[];
 }
 
 const PixelDot: React.FC<PixelDotProps> = React.memo(
-  ({ id, size, fadeDuration, delay, className }) => {
+  ({ id, size, fadeDuration, delay, className, colors }) => {
     const controls = useAnimationControls();
 
     const animatePixel = useCallback(() => {
@@ -117,6 +121,19 @@ const PixelDot: React.FC<PixelDotProps> = React.memo(
       [animatePixel]
     );
 
+    // Use stable color selection based on id to avoid hydration mismatch
+    const getStableColor = (id: string, colors: string[]) => {
+      let hash = 0;
+      for (let i = 0; i < id.length; i++) {
+        const char = id.charCodeAt(i);
+        hash = (hash << 5) - hash + char;
+        hash = hash & hash; // Convert to 32-bit integer
+      }
+      return colors[Math.abs(hash) % colors.length];
+    };
+
+    const stableColor = getStableColor(id, colors);
+
     return (
       <motion.div
         id={id}
@@ -125,6 +142,7 @@ const PixelDot: React.FC<PixelDotProps> = React.memo(
         style={{
           width: `${size}px`,
           height: `${size}px`,
+          backgroundColor: stableColor,
         }}
         initial={{ opacity: 0 }}
         animate={controls}

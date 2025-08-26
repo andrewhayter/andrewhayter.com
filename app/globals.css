@@ -88,3 +88,43 @@
     @apply bg-background text-foreground;
   }
 }
+
+@layer utilities {
+  .animate-background-gradient {
+    animation: background-gradient var(--animation-duration, 15s) infinite
+      cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  @keyframes background-gradient {
+    0% {
+      transform: translate(0, 0);
+    }
+    20% {
+      transform: translate(
+        calc(100% * var(--tx-1, 0.3)),
+        calc(100% * var(--ty-1, 0.3))
+      );
+    }
+    40% {
+      transform: translate(
+        calc(100% * var(--tx-2, -0.3)),
+        calc(100% * var(--ty-2, 0.3))
+      );
+    }
+    60% {
+      transform: translate(
+        calc(100% * var(--tx-3, 0.3)),
+        calc(100% * var(--ty-3, -0.3))
+      );
+    }
+    80% {
+      transform: translate(
+        calc(100% * var(--tx-4, -0.3)),
+        calc(100% * var(--ty-4, -0.3))
+      );
+    }
+    100% {
+      transform: translate(0, 0);
+    }
+  }
+}
