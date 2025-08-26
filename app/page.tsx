@@ -44,10 +44,10 @@ export default function Home() {
 
       {/* Main content container */}
       <div className="relative z-40">
-        <div className="p-6 sm:p-8 lg:p-12">
+        <div className="p-8 sm:p-8 lg:p-12">
           <div className="max-w-6xl mx-auto">
             {/* Hero Section */}
-            <div className="min-h-[100vh] flex flex-col justify-center mb-12 sm:mb-16">
+            <div className="min-h-[100vh] flex flex-col justify-center mb-16 sm:mb-20">
               <div>
                 <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-black mb-2 sm:mb-4 text-white drop-shadow-[0_2px_4px_rgba(0,0,0,0.3)] tracking-wide">
                   ANDREW HAYTER
@@ -87,13 +87,13 @@ export default function Home() {
             </div>
 
             {/* Professional Summary */}
-            <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 sm:gap-8 mb-12 sm:mb-16">
+            <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 sm:gap-8 mb-16 sm:mb-20">
               <div>
                 <h2 className="text-lg sm:text-xl lg:text-2xl font-black border-b-4 border-white pb-3 drop-shadow-[0_1px_2px_rgba(0,0,0,0.3)] tracking-wide">
                   PROFESSIONAL SUMMARY
                 </h2>
               </div>
-              <div className="lg:col-span-2 space-y-4 sm:space-y-6">
+              <div className="lg:col-span-2 space-y-6 sm:space-y-6">
                 <p className="text-base sm:text-lg leading-relaxed drop-shadow-[0_1px_2px_rgba(0,0,0,0.3)]">
                   I build stuff and break stuff. Independent Fullstack Developer
                   specializing in secure, scalable web applications. 9+ years in
@@ -106,13 +106,13 @@ export default function Home() {
             </div>
 
             {/* Work Experience */}
-            <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 sm:gap-8 mb-12 sm:mb-16">
+            <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 sm:gap-8 mb-16 sm:mb-20">
               <div>
                 <h2 className="text-lg sm:text-xl lg:text-2xl font-black border-b-4 border-white pb-3 drop-shadow-[0_1px_2px_rgba(0,0,0,0.3)] tracking-wide">
                   WORK EXPERIENCE
                 </h2>
               </div>
-              <div className="lg:col-span-2 space-y-6 sm:space-y-8">
+              <div className="lg:col-span-2 space-y-8 sm:space-y-8">
                 <div className="text-base sm:text-lg">
                   <div className="flex flex-col sm:flex-row sm:justify-between sm:items-start mb-2 drop-shadow-[0_1px_2px_rgba(0,0,0,0.3)]">
                     <strong className="font-black tracking-wide">
@@ -175,13 +175,13 @@ export default function Home() {
             </div>
 
             {/* Projects */}
-            <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 sm:gap-8 mb-12 sm:mb-16">
+            <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 sm:gap-8 mb-16 sm:mb-20">
               <div>
                 <h2 className="text-lg sm:text-xl lg:text-2xl font-black border-b-4 border-white pb-3 drop-shadow-[0_1px_2px_rgba(0,0,0,0.3)] tracking-wide">
                   PROJECTS
                 </h2>
               </div>
-              <div className="lg:col-span-2 space-y-6 sm:space-y-8">
+              <div className="lg:col-span-2 space-y-8 sm:space-y-8">
                 <div className="text-base sm:text-lg">
                   <div className="flex flex-col sm:flex-row sm:justify-between sm:items-start mb-2 drop-shadow-[0_1px_2px_rgba(0,0,0,0.3)]">
                     <strong className="font-black tracking-wide">
@@ -252,7 +252,7 @@ export default function Home() {
             </div>
 
             {/* Skills */}
-            <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 sm:gap-8 mb-12 sm:mb-16">
+            <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 sm:gap-8 mb-16 sm:mb-20">
               <div>
                 <h2 className="text-lg sm:text-xl lg:text-2xl font-black border-b-4 border-white pb-3 drop-shadow-[0_1px_2px_rgba(0,0,0,0.3)] tracking-wide">
                   SKILLS
@@ -304,7 +304,7 @@ export default function Home() {
             </div>
 
             {/* Certifications */}
-            <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 sm:gap-8">
+            <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 sm:gap-8">
               <div>
                 <h2 className="text-lg sm:text-xl lg:text-2xl font-black border-b-4 border-white pb-3 drop-shadow-[0_1px_2px_rgba(0,0,0,0.3)] tracking-wide">
                   CERTIFICATIONS
