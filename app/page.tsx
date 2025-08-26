@@ -43,11 +43,11 @@ export default function Home() {
       <div className="fixed inset-0 bg-black/10 z-30" />
 
       {/* Main content container */}
-      <div className="relative z-40 min-h-screen">
+      <div className="relative z-40">
         <div className="p-6 sm:p-8 lg:p-12">
           <div className="max-w-6xl mx-auto">
             {/* Hero Section */}
-            <div className="min-h-screen flex flex-col justify-center mb-12 sm:mb-16">
+            <div className="min-h-[100vh] flex flex-col justify-center mb-12 sm:mb-16">
               <div>
                 <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-black mb-2 sm:mb-4 text-white drop-shadow-[0_2px_4px_rgba(0,0,0,0.3)] tracking-wide">
                   ANDREW HAYTER
@@ -118,14 +118,14 @@ export default function Home() {
                     <strong className="font-black tracking-wide">
                       CONSULTANT / SECURITY SPECIALIST (doin what i do)
                     </strong>
-                    <span className="font-mono text-sm sm:text-base">
+                    <span className="font-mono text-base sm:text-lg">
                       2021 – PRESENT
                     </span>
                   </div>
-                  <p className="text-sm sm:text-base text-white mb-2 drop-shadow-[0_1px_2px_rgba(0,0,0,0.3)]">
+                  <p className="text-base sm:text-lg text-white mb-2 drop-shadow-[0_1px_2px_rgba(0,0,0,0.3)]">
                     Independent Consulting
                   </p>
-                  <p className="text-sm sm:text-base leading-relaxed drop-shadow-[0_1px_2px_rgba(0,0,0,0.3)]">
+                  <p className="text-base sm:text-lg leading-relaxed drop-shadow-[0_1px_2px_rgba(0,0,0,0.3)]">
                     AI audits, pentest rigs, Next.js 15 wizardry. Specializing
                     in security-first development and modern web architecture.
                     Building scalable solutions with a focus on cybersecurity
@@ -138,14 +138,14 @@ export default function Home() {
                     <strong className="font-black tracking-wide">
                       PLATFORM DEVELOPER – IOT STARTUP (v huge v fun)
                     </strong>
-                    <span className="font-mono text-sm sm:text-base">
+                    <span className="font-mono text-base sm:text-lg">
                       2018 – 2021
                     </span>
                   </div>
-                  <p className="text-sm sm:text-base text-white mb-2 drop-shadow-[0_1px_2px_rgba(0,0,0,0.3)]">
+                  <p className="text-base sm:text-lg text-white mb-2 drop-shadow-[0_1px_2px_rgba(0,0,0,0.3)]">
                     IoT Technology Company
                   </p>
-                  <p className="text-sm sm:text-base leading-relaxed drop-shadow-[0_1px_2px_rgba(0,0,0,0.3)]">
+                  <p className="text-base sm:text-lg leading-relaxed drop-shadow-[0_1px_2px_rgba(0,0,0,0.3)]">
                     Cloud-native event streams on GCP. Built scalable backend
                     systems and real-time data processing pipelines for IoT
                     devices. Implemented CI/CD and infrastructure as code.
@@ -157,14 +157,14 @@ export default function Home() {
                     <strong className="font-black tracking-wide">
                       WORDPRESS DEVELOPER (lol i know)
                     </strong>
-                    <span className="font-mono text-sm sm:text-base">
+                    <span className="font-mono text-base sm:text-lg">
                       2015 – 2019
                     </span>
                   </div>
-                  <p className="text-sm sm:text-base text-white mb-2 drop-shadow-[0_1px_2px_rgba(0,0,0,0.3)]">
+                  <p className="text-base sm:text-lg text-white mb-2 drop-shadow-[0_1px_2px_rgba(0,0,0,0.3)]">
                     Freelance & Agency Work
                   </p>
-                  <p className="text-sm sm:text-base leading-relaxed drop-shadow-[0_1px_2px_rgba(0,0,0,0.3)]">
+                  <p className="text-base sm:text-lg leading-relaxed drop-shadow-[0_1px_2px_rgba(0,0,0,0.3)]">
                     30+ sites, 99.9% uptime, bash-fu. Managed hosting
                     infrastructure, custom theme development, and performance
                     optimization. Built automated deployment and monitoring
@@ -187,13 +187,13 @@ export default function Home() {
                     <strong className="font-black tracking-wide">
                       ████████████████████
                     </strong>
-                    <span className="font-mono text-sm sm:text-base">2025</span>
+                    <span className="font-mono text-base sm:text-lg">2025</span>
                   </div>
-                  <p className="text-sm sm:text-base text-white mb-2 drop-shadow-[0_1px_2px_rgba(0,0,0,0.3)]">
+                  <p className="text-base sm:text-lg text-white mb-2 drop-shadow-[0_1px_2px_rgba(0,0,0,0.3)]">
                     Next.js 15, PayloadCMS, PostgreSQL, TailwindCSS, n8n,
                     Playwright
                   </p>
-                  <p className="text-sm sm:text-base leading-relaxed drop-shadow-[0_1px_2px_rgba(0,0,0,0.3)]">
+                  <p className="text-base sm:text-lg leading-relaxed drop-shadow-[0_1px_2px_rgba(0,0,0,0.3)]">
                     Advanced news intelligence platform with comprehensive
                     content discovery and analysis capabilities. Features
                     automated content monitoring across multiple sources,
@@ -205,10 +205,10 @@ export default function Home() {
                     opportunities across an entire ecosystem.
                   </p>
                   <div className="flex flex-wrap gap-4 mt-3">
-                    <span className="text-sm font-mono text-white drop-shadow-[0_1px_2px_rgba(0,0,0,0.3)]">
+                    <span className="text-base sm:text-lg font-mono text-white drop-shadow-[0_1px_2px_rgba(0,0,0,0.3)]">
                       ████████████████████
                     </span>
-                    <span className="text-sm font-mono text-white drop-shadow-[0_1px_2px_rgba(0,0,0,0.3)]">
+                    <span className="text-base sm:text-lg font-mono text-white drop-shadow-[0_1px_2px_rgba(0,0,0,0.3)]">
                       ████████████████████
                     </span>
                   </div>
@@ -219,12 +219,12 @@ export default function Home() {
                     <strong className="font-black tracking-wide">
                       VOGELISMS
                     </strong>
-                    <span className="font-mono text-sm sm:text-base">2025</span>
+                    <span className="font-mono text-base sm:text-lg">2025</span>
                   </div>
-                  <p className="text-sm sm:text-base text-white mb-2 drop-shadow-[0_1px_2px_rgba(0,0,0,0.3)]">
+                  <p className="text-base sm:text-lg text-white mb-2 drop-shadow-[0_1px_2px_rgba(0,0,0,0.3)]">
                     React, Vite, TailwindCSS, JavaScript
                   </p>
-                  <p className="text-sm sm:text-base leading-relaxed drop-shadow-[0_1px_2px_rgba(0,0,0,0.3)]">
+                  <p className="text-base sm:text-lg leading-relaxed drop-shadow-[0_1px_2px_rgba(0,0,0,0.3)]">
                     A random quote generator featuring Scott Vogel's iconic
                     stage banter. Features keyboard shortcuts, permalink system,
                     and mobile-friendly design. Clean, minimalist interface
@@ -235,14 +235,14 @@ export default function Home() {
                     <a
                       href="http://vogelisms.com/"
                       target="_blank"
-                      className="text-sm font-mono text-white hover:underline drop-shadow-[0_1px_2px_rgba(0,0,0,0.3)]"
+                      className="text-base sm:text-lg font-mono text-white hover:underline drop-shadow-[0_1px_2px_rgba(0,0,0,0.3)]"
                     >
                       vogelisms.com
                     </a>
                     <a
                       href="https://github.com/andrewhayter/vogelisms.com"
                       target="_blank"
-                      className="text-sm font-mono text-white hover:underline drop-shadow-[0_1px_2px_rgba(0,0,0,0.3)]"
+                      className="text-base sm:text-lg font-mono text-white hover:underline drop-shadow-[0_1px_2px_rgba(0,0,0,0.3)]"
                     >
                       github.com/andrewhayter/vogelisms.com
                     </a>
