@@ -2,16 +2,16 @@ import AnimatedGradient from "@/components/fancy/background/animated-gradient-wi
 import PixelTrail from "@/components/fancy/background/pixel-trail";
 
 export default function Home() {
-  // Lava lamp gradient colors - vibrant, flowing colors that create a smooth, organic effect
+  // Lava lamp gradient colors - darker navy and teal theme with visible movement
   const gradientColors = [
-    "#ff6b6b", // coral red
-    "#4ecdc4", // turquoise
-    "#45b7d1", // sky blue
-    "#96ceb4", // mint green
-    "#feca57", // golden yellow
-    "#ff9ff3", // pink
-    "#54a0ff", // electric blue
-    "#5f27cd", // purple
+    "#0a0a1a", // very dark navy
+    "#1a1a2e", // dark navy
+    "#16213e", // deep navy
+    "#0f3460", // blue navy
+    "#1e3a8a", // darker blue
+    "#0d4a6b", // dark teal
+    "#0f5f6b", // deeper teal
+    "#1e5f6b", // navy teal
   ];
 
   // Pixel trail colors - white for subtle sparkle effect
@@ -22,7 +22,7 @@ export default function Home() {
   return (
     <div className="min-h-screen bg-[#1a1a2e] text-white relative overflow-hidden">
       {/* Static background color to prevent flash */}
-      <div className="fixed inset-0 bg-gradient-to-br from-[#1a1a2e] via-[#16213e] to-[#0f3460] z-0" />
+      <div className="fixed inset-0 bg-gradient-to-br from-[#0a0a1a] via-[#0f3460] to-[#0d4a6b] z-0" />
 
       {/* Animated gradient background */}
       <div className="fixed inset-0 z-10">
@@ -40,7 +40,7 @@ export default function Home() {
       />
 
       {/* Subtle overlay to ensure text readability */}
-      <div className="fixed inset-0 bg-black/20 z-30" />
+      <div className="fixed inset-0 bg-black/10 z-30" />
 
       {/* Main content container */}
       <div className="relative z-40 min-h-screen">
@@ -49,15 +49,14 @@ export default function Home() {
             {/* Hero Section */}
             <div className="min-h-screen flex flex-col justify-center mb-12 sm:mb-16">
               <div>
-                <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-black mb-2 sm:mb-4 text-white drop-shadow-[0_2px_4px_rgba(0,0,0,0.3)]">
+                <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-black mb-2 sm:mb-4 text-white drop-shadow-[0_2px_4px_rgba(0,0,0,0.3)] tracking-wide">
                   ANDREW HAYTER
                 </h1>
-                <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-black mb-6 sm:mb-8 text-white drop-shadow-[0_1px_3px_rgba(0,0,0,0.3)]">
+                <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-black mb-6 sm:mb-8 text-white drop-shadow-[0_1px_3px_rgba(0,0,0,0.3)] tracking-wide">
                   FULLSTACK ENGINEER
                 </h2>
                 <div className="space-y-3 sm:space-y-4">
                   <p className="text-base sm:text-lg drop-shadow-[0_1px_2px_rgba(0,0,0,0.3)]">
-                    <strong className="font-black">EMAIL:</strong>{" "}
                     <a
                       href="mailto:andrewhayter@gmail.com"
                       className="text-white hover:underline"
@@ -66,7 +65,6 @@ export default function Home() {
                     </a>
                   </p>
                   <p className="text-base sm:text-lg drop-shadow-[0_1px_2px_rgba(0,0,0,0.3)]">
-                    <strong className="font-black">GITHUB:</strong>{" "}
                     <a
                       href="https://github.com/andrewhayter"
                       target="_blank"
@@ -76,7 +74,6 @@ export default function Home() {
                     </a>
                   </p>
                   <p className="text-base sm:text-lg drop-shadow-[0_1px_2px_rgba(0,0,0,0.3)]">
-                    <strong className="font-black">LINKEDIN:</strong>{" "}
                     <a
                       href="https://www.linkedin.com/in/hello-andrew-hayter/"
                       target="_blank"
@@ -92,7 +89,7 @@ export default function Home() {
             {/* Professional Summary */}
             <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 sm:gap-8 mb-12 sm:mb-16">
               <div>
-                <h2 className="text-lg sm:text-xl lg:text-2xl font-black border-b-4 border-white pb-3 drop-shadow-[0_1px_2px_rgba(0,0,0,0.3)]">
+                <h2 className="text-lg sm:text-xl lg:text-2xl font-black border-b-4 border-white pb-3 drop-shadow-[0_1px_2px_rgba(0,0,0,0.3)] tracking-wide">
                   PROFESSIONAL SUMMARY
                 </h2>
               </div>
@@ -111,15 +108,15 @@ export default function Home() {
             {/* Work Experience */}
             <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 sm:gap-8 mb-12 sm:mb-16">
               <div>
-                <h2 className="text-lg sm:text-xl lg:text-2xl font-black border-b-4 border-white pb-3 drop-shadow-[0_1px_2px_rgba(0,0,0,0.3)]">
+                <h2 className="text-lg sm:text-xl lg:text-2xl font-black border-b-4 border-white pb-3 drop-shadow-[0_1px_2px_rgba(0,0,0,0.3)] tracking-wide">
                   WORK EXPERIENCE
                 </h2>
               </div>
               <div className="lg:col-span-2 space-y-6 sm:space-y-8">
                 <div className="text-base sm:text-lg">
                   <div className="flex flex-col sm:flex-row sm:justify-between sm:items-start mb-2 drop-shadow-[0_1px_2px_rgba(0,0,0,0.3)]">
-                    <strong className="font-black">
-                      CONSULTANT / SECURITY SPECIALIST (doin what i do best)
+                    <strong className="font-black tracking-wide">
+                      CONSULTANT / SECURITY SPECIALIST (doin what i do)
                     </strong>
                     <span className="font-mono text-sm sm:text-base">
                       2021 – PRESENT
@@ -138,7 +135,7 @@ export default function Home() {
 
                 <div className="text-base sm:text-lg">
                   <div className="flex flex-col sm:flex-row sm:justify-between sm:items-start mb-2 drop-shadow-[0_1px_2px_rgba(0,0,0,0.3)]">
-                    <strong className="font-black">
+                    <strong className="font-black tracking-wide">
                       PLATFORM DEVELOPER – IOT STARTUP (v huge v fun)
                     </strong>
                     <span className="font-mono text-sm sm:text-base">
@@ -157,7 +154,7 @@ export default function Home() {
 
                 <div className="text-base sm:text-lg">
                   <div className="flex flex-col sm:flex-row sm:justify-between sm:items-start mb-2 drop-shadow-[0_1px_2px_rgba(0,0,0,0.3)]">
-                    <strong className="font-black">
+                    <strong className="font-black tracking-wide">
                       WORDPRESS DEVELOPER (lol i know)
                     </strong>
                     <span className="font-mono text-sm sm:text-base">
@@ -180,14 +177,16 @@ export default function Home() {
             {/* Projects */}
             <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 sm:gap-8 mb-12 sm:mb-16">
               <div>
-                <h2 className="text-lg sm:text-xl lg:text-2xl font-black border-b-4 border-white pb-3 drop-shadow-[0_1px_2px_rgba(0,0,0,0.3)]">
+                <h2 className="text-lg sm:text-xl lg:text-2xl font-black border-b-4 border-white pb-3 drop-shadow-[0_1px_2px_rgba(0,0,0,0.3)] tracking-wide">
                   PROJECTS
                 </h2>
               </div>
               <div className="lg:col-span-2 space-y-6 sm:space-y-8">
                 <div className="text-base sm:text-lg">
                   <div className="flex flex-col sm:flex-row sm:justify-between sm:items-start mb-2 drop-shadow-[0_1px_2px_rgba(0,0,0,0.3)]">
-                    <strong className="font-black">████████████████████</strong>
+                    <strong className="font-black tracking-wide">
+                      ████████████████████
+                    </strong>
                     <span className="font-mono text-sm sm:text-base">2025</span>
                   </div>
                   <p className="text-sm sm:text-base text-white mb-2 drop-shadow-[0_1px_2px_rgba(0,0,0,0.3)]">
@@ -203,7 +202,7 @@ export default function Home() {
                     sophisticated backend automation using n8n workflows and
                     Playwright for dynamic content extraction. Provides
                     real-time insights into emerging topics and content
-                    opportunities across the entire ecosystem.
+                    opportunities across an entire ecosystem.
                   </p>
                   <div className="flex flex-wrap gap-4 mt-3">
                     <span className="text-sm font-mono text-white drop-shadow-[0_1px_2px_rgba(0,0,0,0.3)]">
@@ -217,7 +216,9 @@ export default function Home() {
 
                 <div className="text-base sm:text-lg">
                   <div className="flex flex-col sm:flex-row sm:justify-between sm:items-start mb-2 drop-shadow-[0_1px_2px_rgba(0,0,0,0.3)]">
-                    <strong className="font-black">VOGELISMS</strong>
+                    <strong className="font-black tracking-wide">
+                      VOGELISMS
+                    </strong>
                     <span className="font-mono text-sm sm:text-base">2025</span>
                   </div>
                   <p className="text-sm sm:text-base text-white mb-2 drop-shadow-[0_1px_2px_rgba(0,0,0,0.3)]">
@@ -253,39 +254,49 @@ export default function Home() {
             {/* Skills */}
             <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 sm:gap-8 mb-12 sm:mb-16">
               <div>
-                <h2 className="text-lg sm:text-xl lg:text-2xl font-black border-b-4 border-white pb-3 drop-shadow-[0_1px_2px_rgba(0,0,0,0.3)]">
+                <h2 className="text-lg sm:text-xl lg:text-2xl font-black border-b-4 border-white pb-3 drop-shadow-[0_1px_2px_rgba(0,0,0,0.3)] tracking-wide">
                   SKILLS
                 </h2>
               </div>
               <div className="lg:col-span-2 space-y-4 sm:space-y-6">
                 <div className="text-base sm:text-lg drop-shadow-[0_1px_2px_rgba(0,0,0,0.3)]">
-                  <strong className="font-black">ARCHITECTURAL MASTERY:</strong>{" "}
+                  <strong className="font-black tracking-wide">
+                    ARCHITECTURAL MASTERY:
+                  </strong>{" "}
                   React, NextJS (v15), Node, Typescript, TailwindCSS, PayloadCMS
                 </div>
                 <div className="text-base sm:text-lg drop-shadow-[0_1px_2px_rgba(0,0,0,0.3)]">
-                  <strong className="font-black">BACKEND CRAFT:</strong>{" "}
+                  <strong className="font-black tracking-wide">
+                    BACKEND CRAFT:
+                  </strong>{" "}
                   Express, REST APIs, Rust, Linux, scalable
                   MySQL/Postgres/MongoDB
                 </div>
                 <div className="text-base sm:text-lg drop-shadow-[0_1px_2px_rgba(0,0,0,0.3)]">
-                  <strong className="font-black">CLOUD/DEVOPS:</strong> AWS,
-                  GCP, OpenShift, Docker, CI/CD, IaC, technical SEO, real-world
-                  performance tuning
+                  <strong className="font-black tracking-wide">
+                    CLOUD/DEVOPS:
+                  </strong>{" "}
+                  AWS, GCP, OpenShift, Docker, CI/CD, IaC, technical SEO,
+                  real-world performance tuning
                 </div>
                 <div className="text-base sm:text-lg drop-shadow-[0_1px_2px_rgba(0,0,0,0.3)]">
-                  <strong className="font-black">
+                  <strong className="font-black tracking-wide">
                     SECURITY-FIRST ENGINEERING:
                   </strong>{" "}
                   Wireless pentesting, SIEM, authentication, incident response,
                   ethical hacking
                 </div>
                 <div className="text-base sm:text-lg drop-shadow-[0_1px_2px_rgba(0,0,0,0.3)]">
-                  <strong className="font-black">PRODUCT/PROCESS:</strong> Agile
-                  leadership, PRD creation, automated test pipelines,
+                  <strong className="font-black tracking-wide">
+                    PRODUCT/PROCESS:
+                  </strong>{" "}
+                  Agile leadership, PRD creation, automated test pipelines,
                   cross-functional collaboration
                 </div>
                 <div className="text-base sm:text-lg drop-shadow-[0_1px_2px_rgba(0,0,0,0.3)]">
-                  <strong className="font-black">GROWTH MINDSET:</strong>{" "}
+                  <strong className="font-black tracking-wide">
+                    GROWTH MINDSET:
+                  </strong>{" "}
                   Systematic self-upskilling, deep research habits,
                   project-driven learning, rapid prototyping
                 </div>
@@ -295,13 +306,13 @@ export default function Home() {
             {/* Certifications */}
             <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 sm:gap-8">
               <div>
-                <h2 className="text-lg sm:text-xl lg:text-2xl font-black border-b-4 border-white pb-3 drop-shadow-[0_1px_2px_rgba(0,0,0,0.3)]">
+                <h2 className="text-lg sm:text-xl lg:text-2xl font-black border-b-4 border-white pb-3 drop-shadow-[0_1px_2px_rgba(0,0,0,0.3)] tracking-wide">
                   CERTIFICATIONS
                 </h2>
               </div>
               <div className="lg:col-span-2 space-y-4 sm:space-y-6">
                 <div className="text-base sm:text-lg drop-shadow-[0_1px_2px_rgba(0,0,0,0.3)]">
-                  <strong className="font-black">
+                  <strong className="font-black tracking-wide">
                     GOOGLE CYBERSECURITY CERTIFICATE:
                   </strong>
                   <div className="mt-2">
@@ -310,7 +321,7 @@ export default function Home() {
                   </div>
                 </div>
                 <div className="text-base sm:text-lg drop-shadow-[0_1px_2px_rgba(0,0,0,0.3)]">
-                  <strong className="font-black">
+                  <strong className="font-black tracking-wide">
                     COMPTIA SECURITY+ (IN PROGRESS):
                   </strong>
                   <div className="mt-2">
