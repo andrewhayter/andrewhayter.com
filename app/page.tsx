@@ -82,6 +82,15 @@ export default function Home() {
                       linkedin.com/in/hello-andrew-hayter
                     </a>
                   </p>
+                  <p className="text-base sm:text-lg drop-shadow-[0_1px_2px_rgba(0,0,0,0.3)]">
+                    <a
+                      href="https://andrewhayter.com/AndrewHayterResume(2025).pdf"
+                      target="_blank"
+                      className="text-white hover:underline"
+                    >
+                      andrewhayter.com/AndrewHayterResume(2025).pdf
+                    </a>
+                  </p>
                 </div>
               </div>
             </div>
