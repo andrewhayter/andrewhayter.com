@@ -84,7 +84,7 @@ export default function Home() {
                   </p>
                   <p className="text-base sm:text-lg drop-shadow-[0_1px_2px_rgba(0,0,0,0.3)]">
                     <a
-                      href="https://andrewhayter.com/AndrewHayterResume(2025).pdf"
+                      href="https://andrewhayter.com/Andrew-Hayter-Resume.pdf"
                       target="_blank"
                       className="text-white hover:underline"
                     >
