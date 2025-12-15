@@ -5,8 +5,8 @@ interface Dimensions {
   height: number
 }
 
-export function useDimensions(
-  ref: RefObject<HTMLElement | SVGElement>
+export function useDimensions<T extends Element>(
+  ref: RefObject<T | null>
 ): Dimensions {
   const [dimensions, setDimensions] = useState<Dimensions>({
     width: 0,
