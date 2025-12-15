@@ -8,4 +8,9 @@ module.exports = {
     };
     return config;
   },
+  turbopack: {
+    resolveAlias: {
+      '@': require('path').resolve(__dirname),
+    },
+  },
 }
