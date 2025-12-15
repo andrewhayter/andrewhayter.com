@@ -53,7 +53,7 @@ export default function Home() {
                   ANDREW HAYTER
                 </h1>
                 <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-black mb-6 sm:mb-8 text-white drop-shadow-[0_1px_3px_rgba(0,0,0,0.3)] tracking-wide">
-                  FULLSTACK ENGINEER
+                  DEVOPS & LINUX SYSTEMS ENGINEER
                 </h2>
                 <div className="space-y-3 sm:space-y-4">
                   <p className="text-base sm:text-lg drop-shadow-[0_1px_2px_rgba(0,0,0,0.3)]">
@@ -84,11 +84,11 @@ export default function Home() {
                   </p>
                   <p className="text-base sm:text-lg drop-shadow-[0_1px_2px_rgba(0,0,0,0.3)]">
                     <a
-                      href="https://andrewhayter.com/Andrew-Hayter-Resume.pdf"
+                      href="/AndrewHayterResume(2025).pdf"
                       target="_blank"
                       className="text-white hover:underline"
                     >
-                      andrewhayter.com/AndrewHayterResume(2025).pdf
+                      Download Resume (PDF)
                     </a>
                   </p>
                 </div>
@@ -104,12 +104,13 @@ export default function Home() {
               </div>
               <div className="lg:col-span-2 space-y-6 sm:space-y-6">
                 <p className="text-base sm:text-lg leading-relaxed drop-shadow-[0_1px_2px_rgba(0,0,0,0.3)]">
-                  I build stuff and break stuff. Independent Fullstack Developer
-                  specializing in secure, scalable web applications. 9+ years in
-                  JavaScript/TypeScript ecosystems, recently expanded further
-                  into cybersecurity and blockchain development. Love building
-                  apps, bringing ideas to life, and making data-driven
-                  decisions.
+                  DevOps and Linux Systems Engineer with 9+ years deploying and
+                  managing production infrastructure. I build, operate, and
+                  secure self-hosted environments end-to-end, with a strong
+                  fullstack background in Next.js, TypeScript, and PostgreSQL.
+                  Currently running a self-hosted DeFi content platform and
+                  expanding expertise in Kubernetes and infrastructure-as-code
+                  (Terraform).
                 </p>
               </div>
             </div>
@@ -125,60 +126,110 @@ export default function Home() {
                 <div className="text-base sm:text-lg">
                   <div className="flex flex-col sm:flex-row sm:justify-between sm:items-start mb-2 drop-shadow-[0_1px_2px_rgba(0,0,0,0.3)]">
                     <strong className="font-black tracking-wide">
-                      CONSULTANT / SECURITY SPECIALIST (doin what i do)
+                      DevOps & Fullstack Engineer / Technical Founder
                     </strong>
                     <span className="font-mono text-base sm:text-lg">
                       2021 – PRESENT
                     </span>
                   </div>
                   <p className="text-base sm:text-lg text-white mb-2 drop-shadow-[0_1px_2px_rgba(0,0,0,0.3)]">
-                    Independent Consulting
+                    Self-Employed
                   </p>
-                  <p className="text-base sm:text-lg leading-relaxed drop-shadow-[0_1px_2px_rgba(0,0,0,0.3)]">
-                    AI audits, pentest rigs, Next.js 15 wizardry. Specializing
-                    in security-first development and modern web architecture.
-                    Building scalable solutions with a focus on cybersecurity
-                    integration.
-                  </p>
+                  <ul className="text-base sm:text-lg leading-relaxed drop-shadow-[0_1px_2px_rgba(0,0,0,0.3)] space-y-2 list-disc list-inside">
+                    <li>
+                      Built and operate a self-hosted production platform
+                      (DeFi/crypto content) on Ubuntu VPS using Docker Compose
+                      (Next.js, PayloadCMS, PostgreSQL, Nginx).
+                    </li>
+                    <li>
+                      Provisioned and hardened the VPS from scratch: SSH keys,
+                      firewall (ufw), DNS, automated backups, and monitoring
+                      scripts.
+                    </li>
+                    <li>
+                      Implemented CI/CD pipelines with GitHub Actions for
+                      automated testing and zero-downtime deployments.
+                    </li>
+                    <li>
+                      Managed PostgreSQL in production: schema design for 3,000+
+                      entries, migrations, indexing, backups, and performance
+                      tuning.
+                    </li>
+                    <li>
+                      Developed the fullstack application with Next.js 15,
+                      React, TypeScript, and PayloadCMS, including content
+                      workflows and analytics integration.
+                    </li>
+                    <li>
+                      Built Playwright-based scraping pipelines to bootstrap
+                      seed data (platforms, chains, categories) powering the
+                      site's taxonomy.
+                    </li>
+                  </ul>
                 </div>
 
                 <div className="text-base sm:text-lg">
                   <div className="flex flex-col sm:flex-row sm:justify-between sm:items-start mb-2 drop-shadow-[0_1px_2px_rgba(0,0,0,0.3)]">
                     <strong className="font-black tracking-wide">
-                      PLATFORM DEVELOPER – IOT STARTUP (v huge v fun)
+                      Fullstack Developer (Cloud & Web)
                     </strong>
                     <span className="font-mono text-base sm:text-lg">
                       2018 – 2021
                     </span>
                   </div>
                   <p className="text-base sm:text-lg text-white mb-2 drop-shadow-[0_1px_2px_rgba(0,0,0,0.3)]">
-                    IoT Technology Company
+                    POWER SHIFTER Digital
                   </p>
-                  <p className="text-base sm:text-lg leading-relaxed drop-shadow-[0_1px_2px_rgba(0,0,0,0.3)]">
-                    Cloud-native event streams on GCP. Built scalable backend
-                    systems and real-time data processing pipelines for IoT
-                    devices. Implemented CI/CD and infrastructure as code.
-                  </p>
+                  <ul className="text-base sm:text-lg leading-relaxed drop-shadow-[0_1px_2px_rgba(0,0,0,0.3)] space-y-2 list-disc list-inside">
+                    <li>
+                      Developed serverless IoT and data-centric applications on
+                      GCP using Cloud Functions, Firestore, and Pub/Sub.
+                    </li>
+                    <li>
+                      Collaborated with senior engineers, designers, and product
+                      managers to integrate React UIs with Contentful and cloud
+                      backends.
+                    </li>
+                    <li>
+                      Contributed to GitLab CI/CD pipelines for staging and
+                      production deployments.
+                    </li>
+                    <li>
+                      Built and maintained WordPress marketing sites for clients
+                      where needed.
+                    </li>
+                  </ul>
                 </div>
 
                 <div className="text-base sm:text-lg">
                   <div className="flex flex-col sm:flex-row sm:justify-between sm:items-start mb-2 drop-shadow-[0_1px_2px_rgba(0,0,0,0.3)]">
                     <strong className="font-black tracking-wide">
-                      WORDPRESS DEVELOPER (lol i know)
+                      Fullstack Developer / Linux Web Hosting
                     </strong>
                     <span className="font-mono text-base sm:text-lg">
                       2015 – 2019
                     </span>
                   </div>
                   <p className="text-base sm:text-lg text-white mb-2 drop-shadow-[0_1px_2px_rgba(0,0,0,0.3)]">
-                    Freelance & Agency Work
+                    Major Tom
                   </p>
-                  <p className="text-base sm:text-lg leading-relaxed drop-shadow-[0_1px_2px_rgba(0,0,0,0.3)]">
-                    30+ sites, 99.9% uptime, bash-fu. Managed hosting
-                    infrastructure, custom theme development, and performance
-                    optimization. Built automated deployment and monitoring
-                    systems.
-                  </p>
+                  <ul className="text-base sm:text-lg leading-relaxed drop-shadow-[0_1px_2px_rgba(0,0,0,0.3)] space-y-2 list-disc list-inside">
+                    <li>
+                      Deployed and maintained 30+ client websites on Linux
+                      hosting (CentOS/Ubuntu), managing web servers, databases,
+                      DNS, and application config.
+                    </li>
+                    <li>
+                      Configured and tuned Apache/Nginx, PHP, and MySQL for
+                      uptime, performance, and security (caching, compression,
+                      SSL/TLS, access controls).
+                    </li>
+                    <li>
+                      Performed daily sysadmin work: SSH configuration, firewall
+                      rules, cron jobs, database backups, log analysis, and
+                      stack troubleshooting.
+                    </li>
+                  </ul>
                 </div>
               </div>
             </div>
@@ -194,33 +245,28 @@ export default function Home() {
                 <div className="text-base sm:text-lg">
                   <div className="flex flex-col sm:flex-row sm:justify-between sm:items-start mb-2 drop-shadow-[0_1px_2px_rgba(0,0,0,0.3)]">
                     <strong className="font-black tracking-wide">
-                      ████████████████████
+                      Self-Hosted DeFi Content Platform
                     </strong>
-                    <span className="font-mono text-base sm:text-lg">2025</span>
+                    <span className="font-mono text-base sm:text-lg">
+                      2021 – PRESENT
+                    </span>
                   </div>
                   <p className="text-base sm:text-lg text-white mb-2 drop-shadow-[0_1px_2px_rgba(0,0,0,0.3)]">
-                    Next.js 15, PayloadCMS, PostgreSQL, TailwindCSS, n8n,
+                    Stack: Ubuntu, Docker, Docker Compose, Nginx, PostgreSQL,
+                    Next.js 15, TypeScript, PayloadCMS, GitHub Actions,
                     Playwright
                   </p>
-                  <p className="text-base sm:text-lg leading-relaxed drop-shadow-[0_1px_2px_rgba(0,0,0,0.3)]">
-                    Advanced news intelligence platform with comprehensive
-                    content discovery and analysis capabilities. Features
-                    automated content monitoring across multiple sources,
-                    intelligent trend analysis, and content gap identification.
-                    Built with modern headless CMS architecture and
-                    sophisticated backend automation using n8n workflows and
-                    Playwright for dynamic content extraction. Provides
-                    real-time insights into emerging topics and content
-                    opportunities across an entire ecosystem.
-                  </p>
-                  <div className="flex flex-wrap gap-4 mt-3">
-                    <span className="text-base sm:text-lg font-mono text-white drop-shadow-[0_1px_2px_rgba(0,0,0,0.3)]">
-                      ████████████████████
-                    </span>
-                    <span className="text-base sm:text-lg font-mono text-white drop-shadow-[0_1px_2px_rgba(0,0,0,0.3)]">
-                      ████████████████████
-                    </span>
-                  </div>
+                  <ul className="text-base sm:text-lg leading-relaxed drop-shadow-[0_1px_2px_rgba(0,0,0,0.3)] space-y-2 list-disc list-inside">
+                    <li>
+                      End-to-end infrastructure and application: VPS
+                      provisioning, Docker orchestration, Nginx reverse proxy,
+                      CI/CD, database management, and monitoring.
+                    </li>
+                    <li>
+                      Taxonomy-driven content platform with thousands of entries
+                      across platforms, categories, and chains.
+                    </li>
+                  </ul>
                 </div>
 
                 <div className="text-base sm:text-lg">
@@ -231,18 +277,16 @@ export default function Home() {
                     <span className="font-mono text-base sm:text-lg">2025</span>
                   </div>
                   <p className="text-base sm:text-lg text-white mb-2 drop-shadow-[0_1px_2px_rgba(0,0,0,0.3)]">
-                    React, Vite, TailwindCSS, JavaScript
+                    Stack: React, Vite, TailwindCSS, JavaScript
                   </p>
                   <p className="text-base sm:text-lg leading-relaxed drop-shadow-[0_1px_2px_rgba(0,0,0,0.3)]">
-                    A random quote generator featuring Scott Vogel's iconic
-                    stage banter. Features keyboard shortcuts, permalink system,
-                    and mobile-friendly design. Clean, minimalist interface
-                    showcasing memorable quotes from Terror vocalist Scott
-                    Vogel.
+                    A silly random quote generator featuring Scott Vogel's stage
+                    banter, with keyboard shortcuts, permalinks, and
+                    mobile-friendly UI.
                   </p>
                   <div className="flex flex-wrap gap-4 mt-3">
                     <a
-                      href="http://vogelisms.com/"
+                      href="https://vogelisms.com/"
                       target="_blank"
                       className="text-base sm:text-lg font-mono text-white hover:underline drop-shadow-[0_1px_2px_rgba(0,0,0,0.3)]"
                     >
@@ -270,44 +314,37 @@ export default function Home() {
               <div className="lg:col-span-2 space-y-4 sm:space-y-6">
                 <div className="text-base sm:text-lg drop-shadow-[0_1px_2px_rgba(0,0,0,0.3)]">
                   <strong className="font-black tracking-wide">
-                    ARCHITECTURAL MASTERY:
-                  </strong>{" "}
-                  React, NextJS (v15), Node, Typescript, TailwindCSS, PayloadCMS
+                    DevOps & Infrastructure
+                  </strong>
+                  <br />
+                  Linux (Ubuntu, CentOS) · Docker · Docker Compose · Nginx ·
+                  Apache · CI/CD (GitHub Actions, GitLab) · VPS provisioning ·
+                  SSH/firewall hardening · Backup & recovery · PostgreSQL ·
+                  MySQL
                 </div>
                 <div className="text-base sm:text-lg drop-shadow-[0_1px_2px_rgba(0,0,0,0.3)]">
                   <strong className="font-black tracking-wide">
-                    BACKEND CRAFT:
-                  </strong>{" "}
-                  Express, REST APIs, Rust, Linux, scalable
-                  MySQL/Postgres/MongoDB
+                    Scripting & Automation
+                  </strong>
+                  <br />
+                  Bash · Node.js · Playwright (web scraping/automation)
                 </div>
                 <div className="text-base sm:text-lg drop-shadow-[0_1px_2px_rgba(0,0,0,0.3)]">
                   <strong className="font-black tracking-wide">
-                    CLOUD/DEVOPS:
-                  </strong>{" "}
-                  AWS, GCP, OpenShift, Docker, CI/CD, IaC, technical SEO,
-                  real-world performance tuning
+                    Application Stack
+                  </strong>
+                  <br />
+                  Next.js · React · TypeScript · PayloadCMS · WordPress · REST
+                  APIs
                 </div>
                 <div className="text-base sm:text-lg drop-shadow-[0_1px_2px_rgba(0,0,0,0.3)]">
                   <strong className="font-black tracking-wide">
-                    SECURITY-FIRST ENGINEERING:
-                  </strong>{" "}
-                  Wireless pentesting, SIEM, authentication, incident response,
-                  ethical hacking
-                </div>
-                <div className="text-base sm:text-lg drop-shadow-[0_1px_2px_rgba(0,0,0,0.3)]">
-                  <strong className="font-black tracking-wide">
-                    PRODUCT/PROCESS:
-                  </strong>{" "}
-                  Agile leadership, PRD creation, automated test pipelines,
-                  cross-functional collaboration
-                </div>
-                <div className="text-base sm:text-lg drop-shadow-[0_1px_2px_rgba(0,0,0,0.3)]">
-                  <strong className="font-black tracking-wide">
-                    GROWTH MINDSET:
-                  </strong>{" "}
-                  Systematic self-upskilling, deep research habits,
-                  project-driven learning, rapid prototyping
+                    Security & Reliability
+                  </strong>
+                  <br />
+                  Security-first server configuration · SSL/TLS · basic incident
+                  response and log analysis · Google Cybersecurity fundamentals
+                  · CompTIA Security+ (in progress)
                 </div>
               </div>
             </div>
@@ -322,22 +359,20 @@ export default function Home() {
               <div className="lg:col-span-2 space-y-4 sm:space-y-6">
                 <div className="text-base sm:text-lg drop-shadow-[0_1px_2px_rgba(0,0,0,0.3)]">
                   <strong className="font-black tracking-wide">
-                    GOOGLE CYBERSECURITY CERTIFICATE:
+                    Google Cybersecurity Certificate
                   </strong>
                   <div className="mt-2">
-                    <div className="font-mono">COMPLETED OCTOBER 2024</div>
                     <div className="font-mono">Google</div>
+                    <div className="font-mono">Completed October 2024</div>
                   </div>
                 </div>
                 <div className="text-base sm:text-lg drop-shadow-[0_1px_2px_rgba(0,0,0,0.3)]">
                   <strong className="font-black tracking-wide">
-                    COMPTIA SECURITY+ (IN PROGRESS):
+                    CompTIA Security+
                   </strong>
                   <div className="mt-2">
-                    <div className="font-mono">
-                      SEPT 2025 (EXPECTED COMPLETION)
-                    </div>
                     <div className="font-mono">CompTIA</div>
+                    <div className="font-mono">In Progress</div>
                   </div>
                 </div>
               </div>
