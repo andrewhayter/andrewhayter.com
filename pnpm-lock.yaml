@@ -30,7 +30,7 @@ importers:
         specifier: ^12.23.12
         version: 12.23.26(@emotion/is-prop-valid@0.8.8)(react-dom@19.2.3(react@19.2.3))(react@19.2.3)
       next:
-        specifier: latest
+        specifier: 16.0.10
         version: 16.0.10(@babel/core@7.28.5)(react-dom@19.2.3(react@19.2.3))(react@19.2.3)
       react:
         specifier: latest
