@@ -134,7 +134,7 @@ export default function Home() {
 
         <main id="main">
           {/* Hero */}
-          <section id="top" className="mx-auto max-w-3xl px-6 pb-16 pt-16 sm:pb-20 sm:pt-24">
+          <section id="top" className="mx-auto max-w-3xl px-6 pb-10 pt-12 sm:pb-20 sm:pt-24">
             <p className="mb-4 font-mono text-xs uppercase tracking-[0.2em] text-ink/50 dark:text-paper/50">
               Product Engineer — Content Systems &amp; AI-Era Growth
             </p>
@@ -187,7 +187,7 @@ export default function Home() {
           </section>
 
           {/* Experience */}
-          <section id="work" className="mx-auto max-w-3xl px-6 py-16 sm:py-20">
+          <section id="work" className="mx-auto max-w-3xl border-t border-ink/10 px-6 py-10 dark:border-paper/10 sm:py-20">
             <h2 className="mb-10 font-mono text-xs uppercase tracking-[0.2em] text-ink/50 dark:text-paper/50">
               Experience
             </h2>
@@ -217,7 +217,7 @@ export default function Home() {
           </section>
 
           {/* Skills */}
-          <section id="skills" className="mx-auto max-w-3xl px-6 py-16 sm:py-20">
+          <section id="skills" className="mx-auto max-w-3xl border-t border-ink/10 px-6 py-10 dark:border-paper/10 sm:py-20">
             <h2 className="mb-10 font-mono text-xs uppercase tracking-[0.2em] text-ink/50 dark:text-paper/50">
               Skills
             </h2>
@@ -234,7 +234,7 @@ export default function Home() {
           </section>
 
           {/* Education */}
-          <section id="education" className="mx-auto max-w-3xl px-6 py-16 sm:py-20">
+          <section id="education" className="mx-auto max-w-3xl border-t border-ink/10 px-6 py-10 dark:border-paper/10 sm:py-20">
             <h2 className="mb-10 font-mono text-xs uppercase tracking-[0.2em] text-ink/50 dark:text-paper/50">
               Education
             </h2>
@@ -265,7 +265,7 @@ export default function Home() {
           </section>
 
           {/* Contact */}
-          <section id="contact" className="mx-auto max-w-3xl px-6 py-16 sm:py-24">
+          <section id="contact" className="mx-auto max-w-3xl border-t border-ink/10 px-6 py-10 dark:border-paper/10 sm:py-24">
             <h2 className="mb-4 font-mono text-xs uppercase tracking-[0.2em] text-ink/50 dark:text-paper/50">
               Contact
             </h2>
