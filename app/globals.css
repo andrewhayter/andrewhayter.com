@@ -5,9 +5,10 @@
 @layer base {
   html {
     height: 100%;
+    scroll-behavior: smooth;
   }
   body {
-    @apply bg-acid text-twilight font-mono;
+    @apply bg-paper text-ink font-sans antialiased transition-colors duration-300 dark:bg-ink dark:text-paper;
     min-height: 100%;
   }
   :root {
@@ -36,8 +37,6 @@
     --chart-4: 43 74% 66%;
     --chart-5: 27 87% 67%;
     --radius: 0.5rem;
-    --twilight: 220 13% 18%;
-    --acid: 60 9% 98%;
   }
   .dark {
     --background: 222.2 84% 4.9%;
@@ -64,8 +63,6 @@
     --chart-3: 30 80% 55%;
     --chart-4: 280 65% 60%;
     --chart-5: 340 75% 55%;
-    --twilight: 220 13% 18%;
-    --acid: 60 9% 98%;
   }
 }
 
@@ -80,81 +77,10 @@
   * {
     @apply border-border;
   }
-  body {
-    @apply bg-background text-foreground;
-  }
 }
 
 @layer utilities {
-  .animate-background-gradient {
-    animation: background-gradient var(--animation-duration, 40s) infinite
-      cubic-bezier(0.4, 0, 0.6, 1);
-  }
-
-  @keyframes background-gradient {
-    0% {
-      transform: translate(0, 0) scale(1) rotate(0deg);
-      opacity: 0.525;
-    }
-    12.5% {
-      transform: translate(
-          calc(100% * var(--tx-1, 0.3)),
-          calc(100% * var(--ty-1, 0.3))
-        )
-        scale(1.15) rotate(45deg);
-      opacity: 0.675;
-    }
-    25% {
-      transform: translate(
-          calc(100% * var(--tx-2, -0.3)),
-          calc(100% * var(--ty-2, 0.3))
-        )
-        scale(0.85) rotate(90deg);
-      opacity: 0.45;
-    }
-    37.5% {
-      transform: translate(
-          calc(100% * var(--tx-3, 0.3)),
-          calc(100% * var(--ty-3, -0.3))
-        )
-        scale(1.25) rotate(135deg);
-      opacity: 0.6;
-    }
-    50% {
-      transform: translate(
-          calc(100% * var(--tx-4, -0.3)),
-          calc(100% * var(--ty-4, -0.3))
-        )
-        scale(0.75) rotate(180deg);
-      opacity: 0.375;
-    }
-    62.5% {
-      transform: translate(
-          calc(100% * var(--tx-1, 0.3) * 0.6),
-          calc(100% * var(--ty-1, 0.3) * 0.6)
-        )
-        scale(1.1) rotate(225deg);
-      opacity: 0.525;
-    }
-    75% {
-      transform: translate(
-          calc(100% * var(--tx-2, -0.3) * 0.4),
-          calc(100% * var(--ty-2, 0.3) * 0.4)
-        )
-        scale(0.9) rotate(270deg);
-      opacity: 0.45;
-    }
-    87.5% {
-      transform: translate(
-          calc(100% * var(--tx-3, 0.3) * 0.2),
-          calc(100% * var(--ty-3, -0.3) * 0.2)
-        )
-        scale(1.05) rotate(315deg);
-      opacity: 0.6;
-    }
-    100% {
-      transform: translate(0, 0) scale(1) rotate(360deg);
-      opacity: 0.525;
-    }
+  .focus-ring {
+    @apply focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-ink dark:focus-visible:outline-paper;
   }
 }

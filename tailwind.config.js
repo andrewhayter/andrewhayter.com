@@ -7,8 +7,8 @@ module.exports = {
   theme: {
   	extend: {
   		colors: {
-  			acid: '#f8fafc',
-  			twilight: '#0f172a',
+  			paper: '#F6F4EF',
+  			ink: '#161513',
   			background: 'hsl(var(--background))',
   			foreground: 'hsl(var(--foreground))',
   			card: {

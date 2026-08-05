@@ -2,21 +2,20 @@ import "./globals.css";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Andrew Hayter | Fullstack Engineer & Security Specialist",
+  title: "Andrew Hayter | Product Engineer — Content Systems & AI-Era Growth",
   description:
-    "Independent Fullstack Developer & Security Specialist. 9+ years building secure, scalable web applications. React, Next.js, TypeScript, cybersecurity, blockchain development.",
+    "Independent product engineer, 9+ years. I build content and data platforms that compound — programmatic content systems, structured data pipelines, and the infrastructure to run it all in production.",
   keywords: [
     "Andrew Hayter",
-    "fullstack developer",
-    "security specialist",
-    "cybersecurity",
-    "React",
+    "product engineer",
+    "growth engineer",
+    "content systems",
+    "data pipelines",
+    "programmatic SEO",
     "Next.js",
     "TypeScript",
-    "blockchain",
-    "web development",
-    "consultant",
-    "penetration testing",
+    "PostgreSQL",
+    "AI-assisted development",
   ],
   authors: [{ name: "Andrew Hayter" }],
   creator: "Andrew Hayter",
@@ -31,9 +30,9 @@ export const metadata: Metadata = {
     canonical: "/",
   },
   openGraph: {
-    title: "Andrew Hayter | Fullstack Engineer & Security Specialist",
+    title: "Andrew Hayter | Product Engineer — Content Systems & AI-Era Growth",
     description:
-      "Independent Fullstack Developer & Security Specialist. Building secure, scalable web applications with React, Next.js, TypeScript. AI audits, pentest rigs, cybersecurity integration.",
+      "Independent product engineer, 9+ years. I turn raw data and messy workflows into content and product systems that compound at scale — and run the infrastructure underneath myself.",
     url: "https://andrewhayter.com",
     siteName: "Andrew Hayter",
     images: [
@@ -41,7 +40,7 @@ export const metadata: Metadata = {
         url: "/opengraph-image",
         width: 1200,
         height: 630,
-        alt: "Andrew Hayter - Fullstack Engineer & Security Specialist",
+        alt: "Andrew Hayter - Product Engineer, Content Systems & AI-Era Growth",
       },
     ],
     locale: "en_US",
@@ -49,9 +48,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Andrew Hayter | Fullstack Engineer & Security Specialist",
+    title: "Andrew Hayter | Product Engineer — Content Systems & AI-Era Growth",
     description:
-      "Independent Fullstack Developer & Security Specialist. Building secure, scalable web applications with React, Next.js, TypeScript. AI audits, pentest rigs, cybersecurity integration.",
+      "Independent product engineer, 9+ years. Programmatic content systems, structured data pipelines, and the infrastructure to run it all in production.",
     images: ["/twitter-image"],
     creator: "@andrewhayter",
   },
@@ -71,6 +70,17 @@ export const metadata: Metadata = {
   },
 };
 
+const themeInitScript = `
+(function () {
+  try {
+    var stored = localStorage.getItem('theme');
+    var prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+    var dark = stored ? stored === 'dark' : prefersDark;
+    document.documentElement.classList.toggle('dark', dark);
+  } catch (e) {}
+})();
+`;
+
 export default function RootLayout({
   children,
 }: {
@@ -80,9 +90,9 @@ export default function RootLayout({
     "@context": "https://schema.org",
     "@type": "Person",
     name: "Andrew Hayter",
-    jobTitle: "Fullstack Engineer & Security Specialist",
+    jobTitle: "Product Engineer",
     description:
-      "Independent Fullstack Developer & Security Specialist specializing in secure, scalable web applications. 9+ years in JavaScript/TypeScript ecosystems, cybersecurity and blockchain development.",
+      "Independent product engineer with 9+ years building content platforms, data pipelines, and infrastructure-backed applications. Focused on systems that turn raw or public data into defensible product and content advantages at scale.",
     url: "https://andrewhayter.com",
     email: "andrewhayter@gmail.com",
     sameAs: [
@@ -94,23 +104,26 @@ export default function RootLayout({
       "Next.js",
       "TypeScript",
       "Node.js",
-      "Cybersecurity",
-      "Penetration Testing",
-      "Blockchain Development",
-      "Web Development",
-      "Fullstack Development",
-      "AI Security Audits",
+      "PostgreSQL",
+      "Content Systems",
+      "Data Pipelines",
+      "Programmatic SEO",
+      "AI-Assisted Development",
+      "Linux Infrastructure",
     ],
     worksFor: {
       "@type": "Organization",
-      name: "Independent Consulting",
-      description: "Security specialist and fullstack development consultant",
+      name: "Independent",
+      description: "Independent Product Engineer / Founding Engineer",
     },
   };
 
   return (
-    <html lang="en">
+    <html lang="en" suppressHydrationWarning>
       <head>
+        <script
+          dangerouslySetInnerHTML={{ __html: themeInitScript }}
+        />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
@@ -119,8 +132,8 @@ export default function RootLayout({
         />
         <link rel="icon" href="/favicon.ico" sizes="any" />
         <link rel="icon" href="/icon.svg" type="image/svg+xml" />
-        <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
-        <meta name="theme-color" content="#0f172a" />
+        <meta name="theme-color" content="#F6F4EF" media="(prefers-color-scheme: light)" />
+        <meta name="theme-color" content="#161513" media="(prefers-color-scheme: dark)" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
       </head>
       <body>{children}</body>

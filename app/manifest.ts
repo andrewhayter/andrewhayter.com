@@ -2,13 +2,13 @@ import { MetadataRoute } from 'next'
 
 export default function manifest(): MetadataRoute.Manifest {
   return {
-    name: 'Andrew Hayter - Fullstack Engineer',
+    name: 'Andrew Hayter - Product Engineer',
     short_name: 'Andrew Hayter',
-    description: 'Independent Fullstack Developer specializing in secure, scalable web applications',
+    description: 'Independent product engineer building content systems, data pipelines, and the infrastructure behind them.',
     start_url: '/',
     display: 'standalone',
-    background_color: '#f8fafc',
-    theme_color: '#0f172a',
+    background_color: '#F6F4EF',
+    theme_color: '#161513',
     icons: [
       {
         src: '/favicon.ico',
