@@ -129,7 +129,6 @@ export default function Home() {
                 </a>
               ))}
             </nav>
-            <ThemeToggle />
           </div>
         </header>
 
@@ -287,9 +286,12 @@ export default function Home() {
         </main>
 
         <footer className="border-t border-ink/10 px-6 py-8 dark:border-paper/10">
-          <div className="mx-auto flex max-w-3xl flex-col gap-1 text-xs text-ink/45 sm:flex-row sm:items-center sm:justify-between dark:text-paper/45">
-            <span>© {new Date().getFullYear()} Andrew Hayter</span>
-            <span>Built with Next.js &amp; Tailwind CSS</span>
+          <div className="mx-auto flex max-w-3xl flex-col gap-3 text-xs text-ink/45 sm:flex-row sm:items-center sm:justify-between dark:text-paper/45">
+            <div className="flex flex-col gap-1 sm:flex-row sm:gap-4">
+              <span>© {new Date().getFullYear()} Andrew Hayter</span>
+              <span>Built with Next.js &amp; Tailwind CSS</span>
+            </div>
+            <ThemeToggle />
           </div>
         </footer>
       </div>
